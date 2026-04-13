@@ -40,9 +40,38 @@ namespace Apprendre
         private const string DefaultTranslateSourceLanguage = "fr";
         private const string DefaultTranslateTargetLanguage = "en";
         private const string DefaultImageSearchQuery = "image";
+        private const string GitHubRawDataBaseUrl = "https://raw.githubusercontent.com/CharlesNathalie/Apprendre/refs/heads/master/Data/";
 
         private static readonly string AppApprendreDataFolderPath = GetAppApprendreDataFolderPath();
         private static readonly string AbcFrenchAudioFilePath = Path.Combine(AppApprendreDataFolderPath, "ABC_FR.mp3");
+        private static readonly string[] RequiredAppDataFileNames =
+        [
+            "ABC_FR.mp3",
+            "Adjective.json",
+            "AnimauxMFP.json",
+            "ChambreACoucher.json",
+            "ColorName.json",
+            "Communication.json",
+            "CorpsHumain.json",
+            "Cuisine.json",
+            "Feminin.json",
+            "Fruit.json",
+            "Legume.json",
+            "Machinerie.json",
+            "Maison.json",
+            "Masculin.json",
+            "MoyenDeTransport.json",
+            "Nombre.json",
+            "NombreRomain.json",
+            "Nourriture.json",
+            "SalleDeBain.json",
+            "Sentiment.json",
+            "SonFrancais.json",
+            "SoundEnglish.json",
+            "Terre.json",
+            "Verbe.json",
+            "Voiture.json"
+        ];
         private static readonly string[] AvailableSelections =
         {
             ChooseSelection,
@@ -95,6 +124,7 @@ namespace Apprendre
                 return;
             }
 
+            EnsureApplicationDataFiles();
             InitializeDocking();
             InitializeHideImageOnNonImageClicks();
             ActiverPrononciationDesLabels(this);
@@ -259,6 +289,76 @@ namespace Apprendre
             Directory.CreateDirectory(folderPath);
 
             return folderPath;
+        }
+
+        private static void EnsureApplicationDataFiles()
+        {
+            List<string> failedFileNames = [];
+
+            using var httpClient = new System.Net.Http.HttpClient
+            {
+                Timeout = TimeSpan.FromSeconds(30)
+            };
+
+            foreach (string fileName in RequiredAppDataFileNames)
+            {
+                string destinationFilePath = Path.Combine(AppApprendreDataFolderPath, fileName);
+                if (File.Exists(destinationFilePath))
+                {
+                    continue;
+                }
+
+                try
+                {
+                    if (TryCopyLocalDataFile(fileName, destinationFilePath))
+                    {
+                        continue;
+                    }
+
+                    byte[] fileContent = httpClient.GetByteArrayAsync(CreateGitHubDataFileUri(fileName)).GetAwaiter().GetResult();
+                    File.WriteAllBytes(destinationFilePath, fileContent);
+                }
+                catch
+                {
+                    failedFileNames.Add(fileName);
+                }
+            }
+
+            if (failedFileNames.Count > 0)
+            {
+                MessageBox.Show(
+                    $"Impossible d'initialiser certains fichiers de données dans '{AppApprendreDataFolderPath}'.{Environment.NewLine}{string.Join(Environment.NewLine, failedFileNames)}",
+                    "Erreur",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
+        }
+
+        private static bool TryCopyLocalDataFile(string fileName, string destinationFilePath)
+        {
+            string[] candidatePaths =
+            [
+                Path.Combine(AppContext.BaseDirectory, "Data", fileName),
+                Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "Data", fileName))
+            ];
+
+            foreach (string candidatePath in candidatePaths)
+            {
+                if (!File.Exists(candidatePath))
+                {
+                    continue;
+                }
+
+                File.Copy(candidatePath, destinationFilePath, overwrite: false);
+                return true;
+            }
+
+            return false;
+        }
+
+        private static Uri CreateGitHubDataFileUri(string fileName)
+        {
+            return new Uri($"{GitHubRawDataBaseUrl}{Uri.EscapeDataString(fileName)}", UriKind.Absolute);
         }
 
         private void InitialiserChoixListe()
