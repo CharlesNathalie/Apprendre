@@ -1,0 +1,142 @@
+[
+  {
+    "nombre": "0",
+    "fr": "Zéro",
+    "en": "Zero"
+  },
+  {
+    "nombre": "1",
+    "fr": "Un",
+    "en": "One"
+  },
+  {
+    "nombre": "2",
+    "fr": "Deux",
+    "en": "Two"
+  },
+  {
+    "nombre": "3",
+    "fr": "Trois",
+    "en": "Three"
+  },
+  {
+    "nombre": "4",
+    "fr": "Quatre",
+    "en": "Four"
+  },
+  {
+    "nombre": "5",
+    "fr": "Cinq",
+    "en": "Five"
+  },
+  {
+    "nombre": "6",
+    "fr": "Six",
+    "en": "Six"
+  },
+  {
+    "nombre": "7",
+    "fr": "Sept",
+    "en": "Seven"
+  },
+  {
+    "nombre": "8",
+    "fr": "Huit",
+    "en": "Eight"
+  },
+  {
+    "nombre": "9",
+    "fr": "Neuf",
+    "en": "Nine"
+  },
+  {
+    "nombre": "10",
+    "fr": "Dix",
+    "en": "Ten"
+  },
+  {
+    "nombre": "20",
+    "fr": "Vingt",
+    "en": "Twenty"
+  },
+  {
+    "nombre": "30",
+    "fr": "Trente",
+    "en": "Thirty"
+  },
+  {
+    "nombre": "40",
+    "fr": "Quarante",
+    "en": "Forty"
+  },
+  {
+    "nombre": "50",
+    "fr": "Cinquante",
+    "en": "Fifty"
+  },
+  {
+    "nombre": "60",
+    "fr": "Soixante",
+    "en": "Sixty"
+  },
+  {
+    "nombre": "70",
+    "fr": "Soixante-dix",
+    "en": "Seventy"
+  },
+  {
+    "nombre": "80",
+    "fr": "Quatre-vingts",
+    "en": "Eighty"
+  },
+  {
+    "nombre": "90",
+    "fr": "Quatre-vingt-dix",
+    "en": "Ninety"
+  },
+  {
+    "nombre": "100",
+    "fr": "Cent",
+    "en": "One Hundred"
+  },
+  {
+    "nombre": "1000",
+    "fr": "Mille",
+    "en": "One Thousand"
+  },
+  {
+    "nombre": "10000",
+    "fr": "Dix mille",
+    "en": "Ten Thousand"
+  },
+  {
+    "nombre": "100000",
+    "fr": "Cent mille",
+    "en": "One Hundred Thousand"
+  },
+  {
+    "nombre": "1000000",
+    "fr": "Un million",
+    "en": "One Million"
+  },
+  {
+    "nombre": "10000000",
+    "fr": "Dix millions",
+    "en": "Ten Million"
+  },
+  {
+    "nombre": "100000000",
+    "fr": "Cent millions",
+    "en": "One Hundred Million"
+  },
+  {
+    "nombre": "1000000000",
+    "fr": "Un milliard",
+    "en": "One Billion"
+  },
+  {
+    "nombre": "1000000000000",
+    "fr": "Un billion",
+    "en": "One Trillion"
+  }
+]

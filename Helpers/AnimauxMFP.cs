@@ -10,13 +10,21 @@
 
         #region Private
 
-        private void LoadAnimauxMFPList()
+        private void LoadAnimauxMFPList(
+            string _fileName,
+            string _groupeFr,
+            string _groupeEn)
         {
+            _dataList = new List<FrEnURL>();
+            _animauxMFPList = new List<AnimauxMFP>();
+
+            string _dataFilePath = Path.Combine(AppApprendreDataFolderPath, _fileName);
+
             ClearDynamicLearningControls();
 
-            if (!File.Exists(_animauxMFPFilePath))
+            if (!File.Exists(_dataFilePath))
             {
-                ShowEmptyAnimauxMFPState();
+                ShowEmptyAnimauxMFPState(_groupeFr, _groupeEn);
                 return;
             }
 
@@ -25,14 +33,14 @@
 
             if (_animauxMFPList.Count == 0)
             {
-                ShowEmptyAnimauxMFPState();
+                ShowEmptyAnimauxMFPState(_groupeFr, _groupeEn);
                 return;
             }
 
-            ShowAnimauxMFPOnPanelWorking();
+            ShowAnimauxMFPOnPanelWorking(_animauxMFPList, "animaux", "animals");
         }
 
-        private void ShowAnimauxMFPOnPanelWorking()
+        private void ShowAnimauxMFPOnPanelWorking(List<AnimauxMFP> _animauxMFPList, string _groupeFr, string _groupeEn)
         {
             SuspendLayout();
 
@@ -40,30 +48,52 @@
 
             Controls.Add(new Label
             {
-                Tag = $"fr|{-1}",
+                Tag = $"fr|-1",
                 Text = "Découvrir les animaux",
                 Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(31, 41, 55),
-                Location = new Point(56, 72),
+                Location = new Point(50, 68),
                 AutoSize = true
             });
 
             Controls.Add(new Label
             {
-                Tag = $"fr|{-1}",
+                Tag = $"fr|-1",
                 Text = "Des cartes visuelles pour apprendre le mâle, la femelle, le petit et les mots anglais associés.",
                 Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(107, 114, 128),
-                Location = new Point(58, 118),
+                Location = new Point(52, 108),
                 AutoSize = true
             });
 
-            int yPosition = 182;
-            int cardWidth = Math.Max(780, ClientSize.Width - 112);
-            int englishXPosition = Math.Max(470, cardWidth / 2 + 36);
+            Controls.Add(new Label
+            {
+                Tag = $"en|-1",
+                Text = $"Discovering the animals",
+                Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0),
+                ForeColor = Color.FromArgb(31, 41, 55),
+                Location = new Point(50, 128),
+                AutoSize = true
+            });
+
+            Controls.Add(new Label
+            {
+                Tag = $"en|-1",
+                Text = $"Visual cards to easily learn the words of the animals in French and English.",
+                Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0),
+                ForeColor = Color.FromArgb(107, 114, 138),
+                Location = new Point(52, 168),
+                AutoSize = true
+            });
+
+            int yPosition = 188;
+            int cardWidth = Math.Max(760, ClientSize.Width - 100);
+            int englishXPosition = Math.Max(440, cardWidth / 2 + 120);
 
             for (int i = 0; i < _animauxMFPList.Count; i++)
             {
+                bool hasImage = !string.IsNullOrEmpty(_animauxMFPList[i].Url);
+
                 Panel card = new Panel
                 {
                     BackColor = Color.White,
@@ -73,15 +103,31 @@
                     Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right
                 };
 
+                if (hasImage)
+                {
+                    Label labelImageFr = new Label
+                    {
+                        Tag = $"",
+                        Text = "📷",
+                        Font = new Font("Segoe UI Emoji", 12F, FontStyle.Regular, GraphicsUnit.Point, 0),
+                        ForeColor = Color.FromArgb(75, 200, 99),
+                        Location = new Point(16, 18),
+                        AutoSize = true
+                    };
+
+                    card.Controls.Add(labelImageFr);
+                }
+
                 Label labelMaleHeader = new Label
                 {
                     Tag = $"fr|{i}",
                     Text = "Mâle",
                     Font = new Font("Segoe UI", 9.5F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(75, 85, 99),
-                    Location = new Point(28, 58),
+                    Location = new Point(46, 18),
                     AutoSize = true
                 };
+
 
                 Label labelMale = new Label
                 {
@@ -89,8 +135,7 @@
                     Text = _animauxMFPList[i].Male,
                     Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(17, 24, 39),
-                    BackColor = Color.FromArgb(224, 231, 255),
-                    Location = new Point(28, 82),
+                    Location = new Point(28, 42),
                     AutoSize = true,
                     Padding = new Padding(14, 6, 14, 6)
                 };
@@ -101,7 +146,7 @@
                     Text = "Femelle",
                     Font = new Font("Segoe UI", 9.5F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(75, 85, 99),
-                    Location = new Point(28, 128),
+                    Location = new Point(28, 88),
                     AutoSize = true
                 };
 
@@ -111,8 +156,7 @@
                     Text = _animauxMFPList[i].Female,
                     Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(17, 24, 39),
-                    BackColor = Color.FromArgb(224, 231, 255),
-                    Location = new Point(28, 152),
+                    Location = new Point(28, 120),
                     AutoSize = true,
                     Padding = new Padding(14, 6, 14, 6)
                 };
@@ -123,7 +167,7 @@
                     Text = "Petit",
                     Font = new Font("Segoe UI", 9.5F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(75, 85, 99),
-                    Location = new Point(206, 128),
+                    Location = new Point(206, 88),
                     AutoSize = true
                 };
 
@@ -133,8 +177,7 @@
                     Text = _animauxMFPList[i].Petit,
                     Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(17, 24, 39),
-                    BackColor = Color.FromArgb(224, 231, 255),
-                    Location = new Point(206, 152),
+                    Location = new Point(206, 120),
                     AutoSize = true,
                     Padding = new Padding(14, 6, 14, 6)
                 };
@@ -145,7 +188,7 @@
                     Text = "Animal",
                     Font = new Font("Segoe UI", 9.5F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(75, 85, 99),
-                    Location = new Point(englishXPosition, 58),
+                    Location = new Point(englishXPosition, 18),
                     AutoSize = true
                 };
 
@@ -153,10 +196,9 @@
                 {
                     Tag = $"en|{i}",
                     Text = _animauxMFPList[i].En,
-                    Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0),
+                    Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(31, 41, 55),
-                    BackColor = Color.FromArgb(243, 244, 246),
-                    Location = new Point(englishXPosition, 82),
+                    Location = new Point(englishXPosition, 42),
                     AutoSize = true
                     ,
                     Padding = new Padding(14, 6, 14, 6)
@@ -168,7 +210,7 @@
                     Text = "Young",
                     Font = new Font("Segoe UI", 9.5F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(75, 85, 99),
-                    Location = new Point(englishXPosition, 128),
+                    Location = new Point(englishXPosition, 88),
                     AutoSize = true
                 };
 
@@ -176,29 +218,12 @@
                 {
                     Tag = $"en|{i}",
                     Text = _animauxMFPList[i].Young,
-                    Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0),
+                    Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(31, 41, 55),
-                    BackColor = Color.FromArgb(243, 244, 246),
-                    Location = new Point(englishXPosition, 152),
-                    AutoSize = true
-                    ,
+                    Location = new Point(englishXPosition, 120),
+                    AutoSize = true,
                     Padding = new Padding(14, 6, 14, 6)
                 };
-
-                if (!string.IsNullOrEmpty(_animauxMFPList[i].Url))
-                {
-                    Label labelImageFr = new Label
-                    {
-                        Tag = $"fr|{i}",
-                        Text = "Image",
-                        Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0),
-                        ForeColor = Color.FromArgb(75, 200, 99),
-                        Location = new Point(30, 18),
-                        AutoSize = true
-                    };
-
-                    card.Controls.Add(labelImageFr);
-                }
 
                 card.Controls.Add(labelMaleHeader);
                 card.Controls.Add(labelMale);
@@ -220,14 +245,14 @@
             ResumeLayout();
         }
 
-        private void ShowEmptyAnimauxMFPState()
+        private void ShowEmptyAnimauxMFPState(string _groupeFr, string _groupeEn)
         {
             BackColor = Color.FromArgb(249, 250, 251);
 
             Controls.Add(new Label
             {
                 Tag = $"fr|-1",
-                Text = "Aucun animal n'est disponible pour le moment.",
+                Text = $"Aucun mot pour la catégorie {_groupeFr} n'est disponible pour le moment.",
                 Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(31, 41, 55),
                 Location = new Point(56, 112),
@@ -237,7 +262,7 @@
             Controls.Add(new Label
             {
                 Tag = $"en|-1",
-                Text = "No animals are available at the moment.",
+                Text = $"No words from {_groupeEn} category are available at the moment.",
                 Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(31, 41, 55),
                 Location = new Point(56, 142),

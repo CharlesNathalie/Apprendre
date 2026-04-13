@@ -14,6 +14,7 @@
             string _groupeEn) 
         {
             _dataList = new List<FrEnURL>();
+            _animauxMFPList = new List<AnimauxMFP>();
 
             string _dataFilePath = Path.Combine(AppApprendreDataFolderPath, _fileName);
 
@@ -21,7 +22,7 @@
 
             if (!File.Exists(_dataFilePath))
             {
-                ShowEmptyFruitState(_groupeFr, _groupeEn);
+                ShowEmptyDataListState(_groupeFr, _groupeEn);
                 return;
             }
 
@@ -30,14 +31,14 @@
 
             if (_dataList.Count == 0)
             {
-                ShowEmptyFruitState(_groupeFr, _groupeEn);
+                ShowEmptyDataListState(_groupeFr, _groupeEn);
                 return;
             }
 
-            ShowFruitOnPanelWorking(_dataList, _groupeFr, _groupeEn);
+            ShowDataListOnPanelWorking(_dataList, _groupeFr, _groupeEn);
         }
 
-        private void ShowFruitOnPanelWorking(List<FrEnURL> _dataList, string _groupeFr, string _groupeEn)
+        private void ShowDataListOnPanelWorking(List<FrEnURL> _dataList, string _groupeFr, string _groupeEn)
         {
             SuspendLayout();
 
@@ -137,8 +138,6 @@
                 }
 
                 card.Controls.Add(labelFr);
-
-
                 card.Controls.Add(labelEn);
 
                 Controls.Add(card);
@@ -150,7 +149,7 @@
             ResumeLayout();
         }
 
-        private void ShowEmptyFruitState(string _groupeFr, string _groupeEn)
+        private void ShowEmptyDataListState(string _groupeFr, string _groupeEn)
         {
             Controls.Add(new Label
             {

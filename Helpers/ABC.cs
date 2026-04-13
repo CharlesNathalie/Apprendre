@@ -29,7 +29,7 @@
 
             Controls.Add(new Label
             {
-                Tag = $"fr|-1",
+                Tag = $"fr",
                 Text = "ABC",
                 Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(31, 41, 55),
@@ -39,7 +39,7 @@
 
             Controls.Add(new Label
             {
-                Tag = $"fr|-1",
+                Tag = $"fr",
                 Text = "Des cartes visuelles pour associer chaque lettre à sa prononciation en français et en anglais.",
                 Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(107, 114, 128),
@@ -49,7 +49,7 @@
 
             Controls.Add(new Label
             {
-                Tag = $"en|-1",
+                Tag = $"en",
                 Text = "ABC",
                 Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(31, 41, 55),
@@ -59,7 +59,7 @@
 
             Controls.Add(new Label
             {
-                Tag = $"en|-1",
+                Tag = $"en",
                 Text = "Visual cards to associate each letter with its pronunciation in French and English.",
                 Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(107, 114, 128),
@@ -69,7 +69,7 @@
 
             Controls.Add(new Label
             {
-                Tag = $"fr|-1",
+                Tag = $"fr",
                 Text = "Français",
                 Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(31, 41, 55),
@@ -82,7 +82,7 @@
                 char letter = (char)('A' + i);
                 Controls.Add(new Label
                 {
-                    Tag = $"fr|-1",
+                    Tag = $"fr",
                     Text = $" {letter} ",
                     Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(31, 41, 55),
@@ -96,7 +96,7 @@
                 char letter = (char)('a' + i);
                 Controls.Add(new Label
                 {
-                    Tag = $"fr|-1",
+                    Tag = $"fr",
                     Text = $" {letter} ",
                     Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(31, 41, 55),
@@ -109,7 +109,7 @@
 
             Controls.Add(new Label
             {
-                Tag = $"fr|-1",
+                Tag = $"fr",
                 Text = $" {allLetters} ",
                 Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(31, 41, 55),
@@ -130,7 +130,7 @@
 
             Controls.Add(new Label
             {
-                Tag = $"en|-1",
+                Tag = $"en",
                 Text = "English",
                 Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(31, 41, 55),
@@ -143,7 +143,7 @@
                 char letter = (char)('A' + i);
                 Controls.Add(new Label
                 {
-                    Tag = $"en|-1",
+                    Tag = $"en",
                     Text = $" {letter} ",
                     Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(31, 41, 55),
@@ -157,7 +157,7 @@
                 char letter = (char)('a' + i);
                 Controls.Add(new Label
                 {
-                    Tag = $"en|-1",
+                    Tag = $"en",
                     Text = $" {letter} ",
                     Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(31, 41, 55),
@@ -168,7 +168,7 @@
 
             Controls.Add(new Label
             {
-                Tag = $"en|-1",
+                Tag = $"en",
                 Text = $" {allLetters} ",
                 Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(31, 41, 55),

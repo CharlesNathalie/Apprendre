@@ -1,0 +1,82 @@
+[
+  {
+    "colorname": "#FF0000",
+    "fr": "Rouge",
+    "en": "Red"
+  },
+  {
+    "colorname": "#00FF00",
+    "fr": "Vert",
+    "en": "Green"
+  },
+  {
+    "colorname": "#0000FF",
+    "fr": "Bleu",
+    "en": "Blue"
+  },
+  {
+    "colorname": "#FFFF00",
+    "fr": "Jaune",
+    "en": "Yellow"
+  },
+  {
+    "colorname": "#FFA500",
+    "fr": "Orange",
+    "en": "Orange"
+  },
+  {
+    "colorname": "#800080",
+    "fr": "Violet",
+    "en": "Purple"
+  },
+  {
+    "colorname": "#FFFFFF",
+    "fr": "Blanc",
+    "en": "White"
+  },
+  {
+    "colorname": "#000000",
+    "fr": "Noir",
+    "en": "Black"
+  },
+  {
+    "colorname": "#FFC0CB",
+    "fr": "Rose",
+    "en": "Pink"
+  },
+  {
+    "colorname": "#A52A2A",
+    "fr": "Marron",
+    "en": "Brown"
+  },
+  {
+    "colorname": "#808080",
+    "fr": "Gris",
+    "en": "Gray"
+  },
+  {
+    "colorname": "#00FFFF",
+    "fr": "Cyan",
+    "en": "Cyan"
+  },
+  {
+    "colorname": "#FF00FF",
+    "fr": "Magenta",
+    "en": "Magenta"
+  },
+  {
+    "colorname": "#F5F5DC",
+    "fr": "Beige",
+    "en": "Beige"
+  },
+  {
+    "colorname": "#40E0D0",
+    "fr": "Turquoise",
+    "en": "Turquoise"
+  },
+  {
+    "colorname": "#4B0082",
+    "fr": "Indigo",
+    "en": "Indigo"
+  }
+]

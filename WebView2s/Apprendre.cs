@@ -332,7 +332,7 @@ namespace Apprendre
                     options => { /* No need to save static information */ },
                     null),
                 [AnimalMfpSelection] = new(
-                    LoadAnimauxMFPList,
+                    () => LoadAnimauxMFPList("AnimauxMFP.json", "animaux", "animals"),
                     options => SaveListToJson(_animauxMFPList, "AnimauxMFP.json", options),
                     imageUrl => TryAssignImageToAnimauxMFPListItem(imageUrl, (item, url) => item.Url = url)),
                 [FruitSelection] = new(

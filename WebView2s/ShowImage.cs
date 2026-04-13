@@ -170,7 +170,7 @@ public partial class Apprendre
         }
         else if (_animauxMFPList.Count > 0)
         {
-
+            imageUrl = _animauxMFPList[_currentItemIndex].Url;
         }
 
         if (string.IsNullOrWhiteSpace(imageUrl))

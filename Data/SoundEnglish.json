@@ -1,0 +1,1834 @@
+[
+  {
+    "spelling": [
+      "ee",
+      "ea",
+      "e"
+    ],
+    "examples": [
+      {
+        "en": "see",
+        "fr": "voir",
+        "url": "data:image/jpeg;base64,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"
+      },
+      {
+        "en": "meat",
+        "fr": "viande",
+        "url": ""
+      },
+      {
+        "en": "be",
+        "fr": "être",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "i",
+      "y"
+    ],
+    "examples": [
+      {
+        "en": "bit",
+        "fr": "un morceau",
+        "url": ""
+      },
+      {
+        "en": "symbol",
+        "fr": "un symbole",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "a",
+      "ai",
+      "ay"
+    ],
+    "examples": [
+      {
+        "en": "name",
+        "fr": "un nom",
+        "url": ""
+      },
+      {
+        "en": "rain",
+        "fr": "une pluie",
+        "url": ""
+      },
+      {
+        "en": "play",
+        "fr": "jouer",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "a"
+    ],
+    "examples": [
+      {
+        "en": "cat",
+        "fr": "un chat",
+        "url": ""
+      },
+      {
+        "en": "bat",
+        "fr": "une chauve-souris",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "a",
+      "ar"
+    ],
+    "examples": [
+      {
+        "en": "father",
+        "fr": "un père",
+        "url": ""
+      },
+      {
+        "en": "car",
+        "fr": "une voiture",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "u",
+      "o"
+    ],
+    "examples": [
+      {
+        "en": "cup",
+        "fr": "une tasse",
+        "url": ""
+      },
+      {
+        "en": "love",
+        "fr": "amour",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "aw",
+      "au",
+      "or"
+    ],
+    "examples": [
+      {
+        "en": "law",
+        "fr": "une loi",
+        "url": ""
+      },
+      {
+        "en": "fault",
+        "fr": "une faute",
+        "url": ""
+      },
+      {
+        "en": "more",
+        "fr": "plus",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "o",
+      "oa",
+      "ow"
+    ],
+    "examples": [
+      {
+        "en": "go",
+        "fr": "aller",
+        "url": ""
+      },
+      {
+        "en": "boat",
+        "fr": "un bateau",
+        "url": ""
+      },
+      {
+        "en": "snow",
+        "fr": "neige",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "oo",
+      "u"
+    ],
+    "examples": [
+      {
+        "en": "moon",
+        "fr": "une lune",
+        "url": ""
+      },
+      {
+        "en": "blue",
+        "fr": "bleu",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "oo",
+      "u"
+    ],
+    "examples": [
+      {
+        "en": "foot",
+        "fr": "un pied",
+        "url": ""
+      },
+      {
+        "en": "put",
+        "fr": "mettre",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "er",
+      "ir",
+      "ur"
+    ],
+    "examples": [
+      {
+        "en": "her",
+        "fr": "elle",
+        "url": ""
+      },
+      {
+        "en": "bird",
+        "fr": "un oiseau",
+        "url": ""
+      },
+      {
+        "en": "turn",
+        "fr": "tourner",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "a",
+      "e",
+      "o"
+    ],
+    "examples": [
+      {
+        "en": "about",
+        "fr": "à propos",
+        "url": ""
+      },
+      {
+        "en": "taken",
+        "fr": "pris",
+        "url": ""
+      },
+      {
+        "en": "lemon",
+        "fr": "un citron",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "i",
+      "igh",
+      "y"
+    ],
+    "examples": [
+      {
+        "en": "time",
+        "fr": "temps",
+        "url": ""
+      },
+      {
+        "en": "high",
+        "fr": "haut",
+        "url": ""
+      },
+      {
+        "en": "my",
+        "fr": "mon/ma",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ou",
+      "ow"
+    ],
+    "examples": [
+      {
+        "en": "house",
+        "fr": "une maison",
+        "url": ""
+      },
+      {
+        "en": "now",
+        "fr": "maintenant",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "oi",
+      "oy"
+    ],
+    "examples": [
+      {
+        "en": "boil",
+        "fr": "bouillir",
+        "url": ""
+      },
+      {
+        "en": "toy",
+        "fr": "un jouet",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ee",
+      "ea"
+    ],
+    "examples": [
+      {
+        "en": "see",
+        "fr": "voir",
+        "url": ""
+      },
+      {
+        "en": "meat",
+        "fr": "viande",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "i"
+    ],
+    "examples": [
+      {
+        "en": "bit",
+        "fr": "un morceau",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "e"
+    ],
+    "examples": [
+      {
+        "en": "bed",
+        "fr": "un lit",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "a"
+    ],
+    "examples": [
+      {
+        "en": "cat",
+        "fr": "un chat",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "u"
+    ],
+    "examples": [
+      {
+        "en": "cup",
+        "fr": "une tasse",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "or",
+      "aw"
+    ],
+    "examples": [
+      {
+        "en": "more",
+        "fr": "plus",
+        "url": ""
+      },
+      {
+        "en": "law",
+        "fr": "une loi",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "oo"
+    ],
+    "examples": [
+      {
+        "en": "moon",
+        "fr": "une lune",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "oo"
+    ],
+    "examples": [
+      {
+        "en": "foot",
+        "fr": "un pied",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "a"
+    ],
+    "examples": [
+      {
+        "en": "about",
+        "fr": "à propos",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "p"
+    ],
+    "examples": [
+      {
+        "en": "pen",
+        "fr": "un stylo",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "b"
+    ],
+    "examples": [
+      {
+        "en": "book",
+        "fr": "un livre",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "t"
+    ],
+    "examples": [
+      {
+        "en": "top",
+        "fr": "haut",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "d"
+    ],
+    "examples": [
+      {
+        "en": "dog",
+        "fr": "un chien",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "c",
+      "k"
+    ],
+    "examples": [
+      {
+        "en": "cat",
+        "fr": "un chat",
+        "url": ""
+      },
+      {
+        "en": "key",
+        "fr": "une clé",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "g"
+    ],
+    "examples": [
+      {
+        "en": "go",
+        "fr": "aller",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "f",
+      "ph"
+    ],
+    "examples": [
+      {
+        "en": "fish",
+        "fr": "un poisson",
+        "url": ""
+      },
+      {
+        "en": "phone",
+        "fr": "un téléphone",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "v"
+    ],
+    "examples": [
+      {
+        "en": "van",
+        "fr": "une camionnette",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "th"
+    ],
+    "examples": [
+      {
+        "en": "think",
+        "fr": "penser",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "th"
+    ],
+    "examples": [
+      {
+        "en": "this",
+        "fr": "ceci",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "s",
+      "c"
+    ],
+    "examples": [
+      {
+        "en": "sun",
+        "fr": "un soleil",
+        "url": ""
+      },
+      {
+        "en": "city",
+        "fr": "une ville",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "z",
+      "s"
+    ],
+    "examples": [
+      {
+        "en": "zoo",
+        "fr": "un zoo",
+        "url": ""
+      },
+      {
+        "en": "rose",
+        "fr": "une rose",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "sh"
+    ],
+    "examples": [
+      {
+        "en": "ship",
+        "fr": "un navire",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "s"
+    ],
+    "examples": [
+      {
+        "en": "measure",
+        "fr": "une mesure",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "h"
+    ],
+    "examples": [
+      {
+        "en": "hat",
+        "fr": "un chapeau",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "m"
+    ],
+    "examples": [
+      {
+        "en": "man",
+        "fr": "un homme",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "n"
+    ],
+    "examples": [
+      {
+        "en": "nose",
+        "fr": "un nez",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "n",
+      "kn"
+    ],
+    "examples": [
+      {
+        "en": "nose",
+        "fr": "un nez",
+        "url": ""
+      },
+      {
+        "en": "name",
+        "fr": "un nom",
+        "url": ""
+      },
+      {
+        "en": "knee",
+        "fr": "un genou",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ng"
+    ],
+    "examples": [
+      {
+        "en": "sing",
+        "fr": "chanter",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "l"
+    ],
+    "examples": [
+      {
+        "en": "leg",
+        "fr": "une jambe",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "r"
+    ],
+    "examples": [
+      {
+        "en": "red",
+        "fr": "rouge",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "y"
+    ],
+    "examples": [
+      {
+        "en": "yes",
+        "fr": "oui",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "w"
+    ],
+    "examples": [
+      {
+        "en": "water",
+        "fr": "eau",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ch"
+    ],
+    "examples": [
+      {
+        "en": "chair",
+        "fr": "une chaise",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "j",
+      "g"
+    ],
+    "examples": [
+      {
+        "en": "jump",
+        "fr": "sauter",
+        "url": ""
+      },
+      {
+        "en": "giraffe",
+        "fr": "une girafe",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ee",
+      "ea",
+      "ie",
+      "e"
+    ],
+    "examples": [
+      {
+        "en": "see",
+        "fr": "voir",
+        "url": ""
+      },
+      {
+        "en": "meat",
+        "fr": "viande",
+        "url": ""
+      },
+      {
+        "en": "field",
+        "fr": "un champ",
+        "url": ""
+      },
+      {
+        "en": "be",
+        "fr": "être",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "i",
+      "y",
+      "e"
+    ],
+    "examples": [
+      {
+        "en": "bit",
+        "fr": "un morceau",
+        "url": ""
+      },
+      {
+        "en": "symbol",
+        "fr": "un symbole",
+        "url": ""
+      },
+      {
+        "en": "check",
+        "fr": "vérifier",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "e",
+      "ea"
+    ],
+    "examples": [
+      {
+        "en": "bed",
+        "fr": "un lit",
+        "url": ""
+      },
+      {
+        "en": "head",
+        "fr": "une tête",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "o"
+    ],
+    "examples": [
+      {
+        "en": "hot",
+        "fr": "chaud",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "or",
+      "aw",
+      "au"
+    ],
+    "examples": [
+      {
+        "en": "more",
+        "fr": "plus",
+        "url": ""
+      },
+      {
+        "en": "law",
+        "fr": "une loi",
+        "url": ""
+      },
+      {
+        "en": "fault",
+        "fr": "une faute",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "oo",
+      "u",
+      "ew"
+    ],
+    "examples": [
+      {
+        "en": "moon",
+        "fr": "une lune",
+        "url": ""
+      },
+      {
+        "en": "blue",
+        "fr": "bleu",
+        "url": ""
+      },
+      {
+        "en": "new",
+        "fr": "nouveau",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "i",
+      "igh",
+      "y"
+    ],
+    "examples": [
+      {
+        "en": "time",
+        "fr": "temps",
+        "url": ""
+      },
+      {
+        "en": "high",
+        "fr": "haut",
+        "url": ""
+      },
+      {
+        "en": "my",
+        "fr": "mon",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ear",
+      "eer"
+    ],
+    "examples": [
+      {
+        "en": "hear",
+        "fr": "entendre",
+        "url": ""
+      },
+      {
+        "en": "beer",
+        "fr": "une bière",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "air",
+      "are"
+    ],
+    "examples": [
+      {
+        "en": "hair",
+        "fr": "cheveux",
+        "url": ""
+      },
+      {
+        "en": "care",
+        "fr": "un soin",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ure",
+      "our"
+    ],
+    "examples": [
+      {
+        "en": "cure",
+        "fr": "guérir",
+        "url": ""
+      },
+      {
+        "en": "tour",
+        "fr": "tour",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "c",
+      "k",
+      "ck",
+      "ch"
+    ],
+    "examples": [
+      {
+        "en": "cat",
+        "fr": "un chat",
+        "url": ""
+      },
+      {
+        "en": "key",
+        "fr": "une clé",
+        "url": ""
+      },
+      {
+        "en": "back",
+        "fr": "un dos",
+        "url": ""
+      },
+      {
+        "en": "school",
+        "fr": "une école",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "g",
+      "gg"
+    ],
+    "examples": [
+      {
+        "en": "go",
+        "fr": "aller",
+        "url": ""
+      },
+      {
+        "en": "bigger",
+        "fr": "plus grand",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "f",
+      "ph",
+      "gh"
+    ],
+    "examples": [
+      {
+        "en": "fish",
+        "fr": "un poisson",
+        "url": ""
+      },
+      {
+        "en": "phone",
+        "fr": "un téléphone",
+        "url": ""
+      },
+      {
+        "en": "laugh",
+        "fr": "rire",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "s",
+      "c",
+      "sc"
+    ],
+    "examples": [
+      {
+        "en": "sun",
+        "fr": "un soleil",
+        "url": ""
+      },
+      {
+        "en": "city",
+        "fr": "une ville",
+        "url": ""
+      },
+      {
+        "en": "scene",
+        "fr": "une scène",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "sh",
+      "ch",
+      "ti"
+    ],
+    "examples": [
+      {
+        "en": "ship",
+        "fr": "un navire",
+        "url": ""
+      },
+      {
+        "en": "machine",
+        "fr": "une machine",
+        "url": ""
+      },
+      {
+        "en": "nation",
+        "fr": "une nation",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "s",
+      "ge"
+    ],
+    "examples": [
+      {
+        "en": "measure",
+        "fr": "une mesure",
+        "url": ""
+      },
+      {
+        "en": "garage",
+        "fr": "un garage",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ng",
+      "n"
+    ],
+    "examples": [
+      {
+        "en": "sing",
+        "fr": "chanter",
+        "url": ""
+      },
+      {
+        "en": "think",
+        "fr": "penser",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "r",
+      "wr"
+    ],
+    "examples": [
+      {
+        "en": "red",
+        "fr": "rouge",
+        "url": ""
+      },
+      {
+        "en": "write",
+        "fr": "écrire",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "w",
+      "wh"
+    ],
+    "examples": [
+      {
+        "en": "water",
+        "fr": "eau",
+        "url": ""
+      },
+      {
+        "en": "white",
+        "fr": "blanc",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ch",
+      "tch"
+    ],
+    "examples": [
+      {
+        "en": "chair",
+        "fr": "une chaise",
+        "url": ""
+      },
+      {
+        "en": "match",
+        "fr": "un match",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "j",
+      "g",
+      "dge"
+    ],
+    "examples": [
+      {
+        "en": "jump",
+        "fr": "sauter",
+        "url": ""
+      },
+      {
+        "en": "giraffe",
+        "fr": "une girafe",
+        "url": ""
+      },
+      {
+        "en": "bridge",
+        "fr": "un pont",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ar"
+    ],
+    "examples": [
+      {
+        "en": "car",
+        "fr": "une voiture",
+        "url": ""
+      },
+      {
+        "en": "star",
+        "fr": "une étoile",
+        "url": ""
+      },
+      {
+        "en": "park",
+        "fr": "un parc",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ck"
+    ],
+    "examples": [
+      {
+        "en": "duck",
+        "fr": "un canard",
+        "url": ""
+      },
+      {
+        "en": "clock",
+        "fr": "une horloge",
+        "url": ""
+      },
+      {
+        "en": "black",
+        "fr": "noir",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "qu"
+    ],
+    "examples": [
+      {
+        "en": "queen",
+        "fr": "une reine",
+        "url": ""
+      },
+      {
+        "en": "quick",
+        "fr": "rapide",
+        "url": ""
+      },
+      {
+        "en": "quiz",
+        "fr": "un quiz",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "wh"
+    ],
+    "examples": [
+      {
+        "en": "whale",
+        "fr": "une baleine",
+        "url": ""
+      },
+      {
+        "en": "wheel",
+        "fr": "une roue",
+        "url": ""
+      },
+      {
+        "en": "white",
+        "fr": "blanc",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "x"
+    ],
+    "examples": [
+      {
+        "en": "box",
+        "fr": "une boîte",
+        "url": ""
+      },
+      {
+        "en": "fox",
+        "fr": "un renard",
+        "url": ""
+      },
+      {
+        "en": "six",
+        "fr": "six",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ll"
+    ],
+    "examples": [
+      {
+        "en": "ball",
+        "fr": "une balle",
+        "url": ""
+      },
+      {
+        "en": "bell",
+        "fr": "une cloche",
+        "url": ""
+      },
+      {
+        "en": "wall",
+        "fr": "un mur",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ay"
+    ],
+    "examples": [
+      {
+        "en": "day",
+        "fr": "un jour",
+        "url": ""
+      },
+      {
+        "en": "play",
+        "fr": "jouer",
+        "url": ""
+      },
+      {
+        "en": "gray",
+        "fr": "gris",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "igh"
+    ],
+    "examples": [
+      {
+        "en": "night",
+        "fr": "une nuit",
+        "url": ""
+      },
+      {
+        "en": "light",
+        "fr": "une lumière",
+        "url": ""
+      },
+      {
+        "en": "right",
+        "fr": "droite",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ue"
+    ],
+    "examples": [
+      {
+        "en": "blue",
+        "fr": "bleu",
+        "url": ""
+      },
+      {
+        "en": "glue",
+        "fr": "colle",
+        "url": ""
+      },
+      {
+        "en": "true",
+        "fr": "vrai",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ow"
+    ],
+    "examples": [
+      {
+        "en": "cow",
+        "fr": "une vache",
+        "url": ""
+      },
+      {
+        "en": "brown",
+        "fr": "brun",
+        "url": ""
+      },
+      {
+        "en": "town",
+        "fr": "une ville",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "tch"
+    ],
+    "examples": [
+      {
+        "en": "match",
+        "fr": "un match",
+        "url": ""
+      },
+      {
+        "en": "watch",
+        "fr": "une montre",
+        "url": ""
+      },
+      {
+        "en": "catch",
+        "fr": "attraper",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "oa"
+    ],
+    "examples": [
+      {
+        "en": "boat",
+        "fr": "un bateau",
+        "url": ""
+      },
+      {
+        "en": "goat",
+        "fr": "une chèvre",
+        "url": ""
+      },
+      {
+        "en": "coat",
+        "fr": "un manteau",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ph"
+    ],
+    "examples": [
+      {
+        "en": "phone",
+        "fr": "un téléphone",
+        "url": ""
+      },
+      {
+        "en": "photo",
+        "fr": "une photo",
+        "url": ""
+      },
+      {
+        "en": "elephant",
+        "fr": "un éléphant",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "wr"
+    ],
+    "examples": [
+      {
+        "en": "write",
+        "fr": "écrire",
+        "url": ""
+      },
+      {
+        "en": "wrong",
+        "fr": "faux",
+        "url": ""
+      },
+      {
+        "en": "wrist",
+        "fr": "un poignet",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ea"
+    ],
+    "examples": [
+      {
+        "en": "bread",
+        "fr": "un pain",
+        "url": ""
+      },
+      {
+        "en": "head",
+        "fr": "une tête",
+        "url": ""
+      },
+      {
+        "en": "weather",
+        "fr": "temps",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ir"
+    ],
+    "examples": [
+      {
+        "en": "bird",
+        "fr": "un oiseau",
+        "url": ""
+      },
+      {
+        "en": "girl",
+        "fr": "une fille",
+        "url": ""
+      },
+      {
+        "en": "shirt",
+        "fr": "une chemise",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ai"
+    ],
+    "examples": [
+      {
+        "en": "rain",
+        "fr": "une pluie",
+        "url": ""
+      },
+      {
+        "en": "train",
+        "fr": "un train",
+        "url": ""
+      },
+      {
+        "en": "snail",
+        "fr": "un escargot",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "oy"
+    ],
+    "examples": [
+      {
+        "en": "boy",
+        "fr": "un garçon",
+        "url": ""
+      },
+      {
+        "en": "toy",
+        "fr": "un jouet",
+        "url": ""
+      },
+      {
+        "en": "joy",
+        "fr": "joie",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ch"
+    ],
+    "examples": [
+      {
+        "en": "chair",
+        "fr": "une chaise",
+        "url": ""
+      },
+      {
+        "en": "cheese",
+        "fr": "fromage",
+        "url": ""
+      },
+      {
+        "en": "chicken",
+        "fr": "un poulet",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "th"
+    ],
+    "examples": [
+      {
+        "en": "thin",
+        "fr": "mince",
+        "url": ""
+      },
+      {
+        "en": "three",
+        "fr": "trois",
+        "url": ""
+      },
+      {
+        "en": "thumb",
+        "fr": "un pouce",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ea"
+    ],
+    "examples": [
+      {
+        "en": "sea",
+        "fr": "une mer",
+        "url": ""
+      },
+      {
+        "en": "tea",
+        "fr": "thé",
+        "url": ""
+      },
+      {
+        "en": "eat",
+        "fr": "manger",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ng"
+    ],
+    "examples": [
+      {
+        "en": "song",
+        "fr": "une chanson",
+        "url": ""
+      },
+      {
+        "en": "ring",
+        "fr": "une bague",
+        "url": ""
+      },
+      {
+        "en": "king",
+        "fr": "un roi",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ee"
+    ],
+    "examples": [
+      {
+        "en": "tree",
+        "fr": "un arbre",
+        "url": ""
+      },
+      {
+        "en": "green",
+        "fr": "vert",
+        "url": ""
+      },
+      {
+        "en": "feet",
+        "fr": "pieds",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "oo"
+    ],
+    "examples": [
+      {
+        "en": "book",
+        "fr": "un livre",
+        "url": ""
+      },
+      {
+        "en": "good",
+        "fr": "bon",
+        "url": ""
+      },
+      {
+        "en": "look",
+        "fr": "regarder",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "sh"
+    ],
+    "examples": [
+      {
+        "en": "shoe",
+        "fr": "une chaussure",
+        "url": ""
+      },
+      {
+        "en": "fish",
+        "fr": "un poisson",
+        "url": ""
+      },
+      {
+        "en": "shop",
+        "fr": "un magasin",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "or"
+    ],
+    "examples": [
+      {
+        "en": "horse",
+        "fr": "un cheval",
+        "url": ""
+      },
+      {
+        "en": "short",
+        "fr": "court",
+        "url": ""
+      },
+      {
+        "en": "storm",
+        "fr": "une tempête",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "air"
+    ],
+    "examples": [
+      {
+        "en": "hair",
+        "fr": "cheveux",
+        "url": ""
+      },
+      {
+        "en": "chair",
+        "fr": "une chaise",
+        "url": ""
+      },
+      {
+        "en": "fair",
+        "fr": "juste",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "spelling": [
+      "ear"
+    ],
+    "examples": [
+      {
+        "en": "ear",
+        "fr": "une oreille",
+        "url": ""
+      },
+      {
+        "en": "dear",
+        "fr": "cher",
+        "url": ""
+      },
+      {
+        "en": "near",
+        "fr": "près",
+        "url": ""
+      }
+    ]
+  }
+]
