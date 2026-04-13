@@ -45,41 +45,20 @@
             Controls.Add(new Label
             {
                 Tag = $"fr|-1",
-                Text = $"Découvrir les {_groupeFr}",
-                Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0),
-                ForeColor = Color.FromArgb(31, 41, 55),
-                Location = new Point(50, 68),
-                AutoSize = true
-            });
-
-            Controls.Add(new Label
-            {
-                Tag = $"fr|-1",
-                Text = $"Des cartes visuelles pour apprendre facilement les mots des {_groupeFr} en français et en anglais.",
-                Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0),
-                ForeColor = Color.FromArgb(107, 114, 128),
-                Location = new Point(52, 108),
-                AutoSize = true
-            });
-
-
-            Controls.Add(new Label
-            {
-                Tag = $"en|-1",
-                Text = $"Discovering {_groupeEn}",
-                Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0),
-                ForeColor = Color.FromArgb(31, 41, 55),
-                Location = new Point(50, 128),
+                Text = $"Des cartes visuelles pour apprendre à écrire et à prononcer les mots en français et en anglais.",
+                Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
+                ForeColor = Color.FromArgb(17, 24, 39),
+                Location = new Point(52, 88),
                 AutoSize = true
             });
 
             Controls.Add(new Label
             {
                 Tag = $"en|-1",
-                Text = $"Visual cards to easily learn the words of {_groupeEn} in French and English.",
-                Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0),
-                ForeColor = Color.FromArgb(107, 114, 138),
-                Location = new Point(52, 168),
+                Text = $"Visual flashcards to learn how to write and pronounce words in French and English.",
+                Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
+                ForeColor = Color.FromArgb(17, 24, 39),
+                Location = new Point(52, 128),
                 AutoSize = true
             });
 
@@ -106,7 +85,6 @@
                     Text = _dataList[i].Fr,
                     Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(17, 24, 39),
-                    BackColor = Color.FromArgb(224, 231, 255),
                     Location = new Point(hasImage ? 48 : 24, 34),
                     AutoSize = true,
                     Padding = new Padding(10, 4, 10, 4)

@@ -40,39 +40,25 @@ namespace Apprendre
         {
             SuspendLayout();
 
-            Panel introCard = new Panel
+            Controls.Add(new Label
             {
-                Tag = "son-dynamic",
-                BackColor = Color.FromArgb(239, 246, 255),
-                BorderStyle = BorderStyle.FixedSingle,
-                Location = new Point(50, 78),
-                Size = new Size(Math.Max(760, ClientSize.Width - 100), 86),
-                Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right
-            };
-
-            Label titleLabel = new Label
-            {
-                Tag = "fr",
-                Text = "Découvrir les sons français",
-                Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0),
-                ForeColor = Color.FromArgb(30, 64, 175),
-                Location = new Point(20, 12),
+                Tag = $"fr|-1",
+                Text = $"Des cartes visuelles pour apprendre à écrire et à prononcer les mots en français et en anglais.",
+                Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
+                ForeColor = Color.FromArgb(17, 24, 39),
+                Location = new Point(52, 88),
                 AutoSize = true
-            };
+            });
 
-            Label subtitleLabel = new Label
+            Controls.Add(new Label
             {
-                Tag = "fr",
-                Text = "Des cartes visuelles pour lire, prononcer et mémoriser plus facilement.",
-                Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0),
-                ForeColor = Color.FromArgb(75, 85, 99),
-                Location = new Point(22, 48),
+                Tag = $"en|-1",
+                Text = $"Visual flashcards to learn how to write and pronounce words in French and English.",
+                Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
+                ForeColor = Color.FromArgb(17, 24, 39),
+                Location = new Point(52, 128),
                 AutoSize = true
-            };
-
-            introCard.Controls.Add(titleLabel);
-            introCard.Controls.Add(subtitleLabel);
-            Controls.Add(introCard);
+            });
 
             int yPosition = 185;
             int cardWidth = Math.Max(760, ClientSize.Width - 100);

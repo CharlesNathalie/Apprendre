@@ -41,21 +41,21 @@ namespace Apprendre
 
             Controls.Add(new Label
             {
-                Tag = $"fr|{-1}",
-                Text = "Découvrir les couleurs",
-                Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0),
-                ForeColor = Color.FromArgb(31, 41, 55),
-                Location = new Point(50, 78),
+                Tag = $"fr|-1",
+                Text = $"Des cartes visuelles pour apprendre à écrire et à prononcer les mots en français et en anglais.",
+                Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
+                ForeColor = Color.FromArgb(17, 24, 39),
+                Location = new Point(52, 88),
                 AutoSize = true
             });
 
             Controls.Add(new Label
             {
-                Tag = $"fr|{-1}",
-                Text = "Une présentation visuelle pour associer rapidement la couleur, le mot français et le mot anglais.",
-                Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0),
-                ForeColor = Color.FromArgb(107, 114, 128),
-                Location = new Point(52, 118),
+                Tag = $"en|-1",
+                Text = $"Visual flashcards to learn how to write and pronounce words in French and English.",
+                Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
+                ForeColor = Color.FromArgb(17, 24, 39),
+                Location = new Point(52, 128),
                 AutoSize = true
             });
 
