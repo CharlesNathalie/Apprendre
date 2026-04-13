@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <GenerateResourceNever>true</GenerateResourceNever>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3856.49" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Helpers\*.resx" />
+    <EmbeddedResource Remove="Helpers\*.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Ensure no .resx files are treated as embedded resources or copied to output -->
+    <EmbeddedResource Remove="**\*.resx" />
+    <None Include="**\*.resx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Helpers\AnimauxMFP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Helpers\ABC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Helpers\NombreRomain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Helpers\Nombre.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WebView2s\Prononciation.cs" />
+  </ItemGroup>
+</Project>
