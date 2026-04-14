@@ -7,7 +7,7 @@ Sous « Options », il est possible d’afficher les images des mots lorsqu’il
 ### Comment ajouter ou associer des images aux mots :
 
 Avant de commencer, les documents officiels contenant les mots en français, en anglais et l’URL de l’image se trouvent dans :
-**C:\Users\{user}\AppData\Local\Apprendre\Data\**
+*C:\Users\{user}\AppData\Local\Apprendre\Data\*
 
 Si vous recherchez ce répertoire, il se peut que certaines sections soient invisibles, comme *AppData*. Faites une recherche pour vous aider à afficher ces dossiers.
 
@@ -36,7 +36,7 @@ Pour remplacer une image, il suffit de suivre les mêmes étapes.
 
 
 **Note :** Étant donné que les fichiers modifiés se trouvent sur l’ordinateur de l’utilisateur, dans le répertoire
-**C:\Users\{user}\AppData\Local\Apprendre\Data\**,
+*C:\Users\{user}\AppData\Local\Apprendre\Data\*,
 ces documents deviennent les documents officiels pour cet utilisateur.
 
 Pour que les autres puissent en profiter, ils doivent être copiés dans **_Apprendre\Data\**, puis un *push Git* doit être effectué afin qu’ils se retrouvent dans **GitHub\CharlesNathalie\Apprendre\Data\**.
@@ -45,7 +45,7 @@ Pour que les autres puissent en profiter, ils doivent être copiés dans **_Appr
 
 **Note 2 :** Les documents **.json** envoyés dans GitHub serviront de documents de départ pour les autres utilisateurs.
 Au lancement de l’application, ces documents **.json** seront copiés dans le répertoire
-**C:\Users\{user}\AppData\Local\Apprendre\Data\**
+*C:\Users\{user}\AppData\Local\Apprendre\Data\*
 et deviendront les documents officiels pour l’utilisateur.
 
 Donc, si vous souhaitez que les autres puissent profiter de vos modifications, n’oubliez pas d’effectuer un *push Git* après avoir copié les documents **.json** et ajouté ou modifié les images.
