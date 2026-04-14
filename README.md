@@ -7,7 +7,7 @@ Sous « Options », il est possible d’afficher les images des mots lorsqu’il
 ### Comment ajouter ou associer des images aux mots :
 
 Avant de commencer, les documents officiels contenant les mots en français, en anglais et l’URL de l’image se trouvent dans :
-**C:\Users{user}\AppData\Local\Apprendre\Data\**
+**C:\Users\{user}\AppData\Local\Apprendre\Data\**
 
 Si vous recherchez ce répertoire, il se peut que certaines sections soient invisibles, comme *AppData*. Faites une recherche pour vous aider à afficher ces dossiers.
 
