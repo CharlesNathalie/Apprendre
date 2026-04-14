@@ -124,6 +124,7 @@ namespace Apprendre
                 return;
             }
 
+            ApplyApplicationIcon();
             EnsureApplicationDataFiles();
             InitializeDocking();
             InitializeHideImageOnNonImageClicks();
@@ -135,6 +136,21 @@ namespace Apprendre
         }
 
         #endregion Constructors
+
+        private void ApplyApplicationIcon()
+        {
+            try
+            {
+                System.Drawing.Icon? icon = System.Drawing.Icon.ExtractAssociatedIcon(Application.ExecutablePath);
+                if (icon is not null)
+                {
+                    Icon = icon;
+                }
+            }
+            catch
+            {
+            }
+        }
 
         #region Events
 
