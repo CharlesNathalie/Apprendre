@@ -44,9 +44,11 @@ namespace Apprendre
 
         private static readonly string AppApprendreDataFolderPath = GetAppApprendreDataFolderPath();
         private static readonly string AbcFrenchAudioFilePath = Path.Combine(AppApprendreDataFolderPath, "ABC_FR.mp3");
+        private static readonly string AbcEnglishAudioFilePath = Path.Combine(AppApprendreDataFolderPath, "ABC_EN.mp3");
         private static readonly string[] RequiredAppDataFileNames =
         [
             "ABC_FR.mp3",
+            "ABC_EN.mp3",
             "Adjective.json",
             "AnimauxMFP.json",
             "ChambreACoucher.json",

@@ -201,7 +201,7 @@
             // 
             checkBoxGetDataImage.AutoSize = true;
             checkBoxGetDataImage.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBoxGetDataImage.Location = new Point(12, 61);
+            checkBoxGetDataImage.Location = new Point(12, 241);
             checkBoxGetDataImage.Name = "checkBoxGetDataImage";
             checkBoxGetDataImage.Size = new Size(137, 25);
             checkBoxGetDataImage.TabIndex = 8;
@@ -249,7 +249,7 @@
             // 
             btnOptions.BackColor = Color.Lime;
             btnOptions.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnOptions.Location = new Point(870, 23);
+            btnOptions.Location = new Point(850, 17);
             btnOptions.Name = "btnOptions";
             btnOptions.Size = new Size(93, 35);
             btnOptions.TabIndex = 14;
@@ -261,9 +261,9 @@
             // 
             btnLanguage.BackColor = Color.Lime;
             btnLanguage.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLanguage.Location = new Point(983, 23);
+            btnLanguage.Location = new Point(959, 17);
             btnLanguage.Name = "btnLanguage";
-            btnLanguage.Size = new Size(81, 35);
+            btnLanguage.Size = new Size(62, 35);
             btnLanguage.TabIndex = 15;
             btnLanguage.Text = "En";
             btnLanguage.UseVisualStyleBackColor = false;
@@ -271,11 +271,13 @@
             // 
             // panelOptions
             // 
+            panelOptions.BackColor = Color.LightGreen;
+            panelOptions.BorderStyle = BorderStyle.Fixed3D;
             panelOptions.Controls.Add(checkBoxAfficherImage);
             panelOptions.Controls.Add(checkBoxGetDataImage);
-            panelOptions.Location = new Point(871, 69);
+            panelOptions.Location = new Point(850, 61);
             panelOptions.Name = "panelOptions";
-            panelOptions.Size = new Size(193, 210);
+            panelOptions.Size = new Size(193, 293);
             panelOptions.TabIndex = 16;
             panelOptions.Visible = false;
             // 

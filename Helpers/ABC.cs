@@ -53,7 +53,7 @@
                 Text = "Français",
                 Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(31, 41, 55),
-                Location = new Point(50, 232),
+                Location = new Point(50, 192),
                 AutoSize = true
             });
 
@@ -66,7 +66,7 @@
                     Text = $" {letter} ",
                     Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(31, 41, 55),
-                    Location = new Point(50 + (i * 34), 262),
+                    Location = new Point(50 + (i * 34), 222),
                     AutoSize = true
                 });
             }
@@ -80,12 +80,12 @@
                     Text = $" {letter} ",
                     Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(31, 41, 55),
-                    Location = new Point(50 + (i * 34), 294),
+                    Location = new Point(50 + (i * 34), 254),
                     AutoSize = true
                 });
             }
 
-            string allLetters = string.Join(" ", Enumerable.Range(0, 26).Select(i => $"{(char)('A' + i)} "));
+            string allLetters = string.Join(" ", Enumerable.Range(0, 26).Select(i => $"{(char)('A' + i)}, "));
 
             Controls.Add(new Label
             {
@@ -93,20 +93,24 @@
                 Text = $" {allLetters} ",
                 Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(31, 41, 55),
-                Location = new Point(50, 332),
+                Location = new Point(50, 292),
                 AutoSize = true
             });
 
-            Controls.Add(new Button
+            LinkLabel abc_frAudioLink = new LinkLabel
             {
-                Name = "btnPlayAudio",
-                Text = $" Multimedia ",
+                Name = "lnkPlayAudio_FR",
+                Text = "ABC_FR.mp3",
                 Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
-                ForeColor = Color.FromArgb(31, 41, 55),
-                Location = new Point(50, 382),
+                LinkColor = Color.RoyalBlue,
+                ActiveLinkColor = Color.FromArgb(30, 64, 175),
+                VisitedLinkColor = Color.RoyalBlue,
+                Location = new Point(50, 342),
                 AutoSize = true,
-                
-            });
+                Tag = AbcFrenchAudioFilePath
+            };
+            abc_frAudioLink.LinkClicked += Abc_frAudioLink_LinkClicked;
+            Controls.Add(abc_frAudioLink);
 
             Controls.Add(new Label
             {
@@ -114,7 +118,7 @@
                 Text = "English",
                 Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(31, 41, 55),
-                Location = new Point(50, 442),
+                Location = new Point(50, 412),
                 AutoSize = true
             });
 
@@ -127,7 +131,7 @@
                     Text = $" {letter} ",
                     Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(31, 41, 55),
-                    Location = new Point(50 + (i * 34), 472),
+                    Location = new Point(50 + (i * 34), 442),
                     AutoSize = true
                 });
             }
@@ -141,7 +145,7 @@
                     Text = $" {letter} ",
                     Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     ForeColor = Color.FromArgb(31, 41, 55),
-                    Location = new Point(50 + (i * 34), 514),
+                    Location = new Point(50 + (i * 34), 484),
                     AutoSize = true
                 });
             }
@@ -152,9 +156,25 @@
                 Text = $" {allLetters} ",
                 Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(31, 41, 55),
-                Location = new Point(50, 552),
+                Location = new Point(50, 522),
                 AutoSize = true
             });
+
+
+            LinkLabel abc_enAudioLink = new LinkLabel
+            {
+                Name = "lnkPlayAudio_EN",
+                Text = "ABC_EN.mp3",
+                Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0),
+                LinkColor = Color.RoyalBlue,
+                ActiveLinkColor = Color.FromArgb(30, 64, 175),
+                VisitedLinkColor = Color.RoyalBlue,
+                Location = new Point(50, 582),
+                AutoSize = true,
+                Tag = AbcEnglishAudioFilePath
+            };
+            abc_enAudioLink.LinkClicked += Abc_enAudioLink_LinkClicked;
+            Controls.Add(abc_enAudioLink);
 
 
             int yPosition = 165;
@@ -163,6 +183,50 @@
 
             AutoScrollMinSize = new Size(0, yPosition + 40);
             ResumeLayout();
+        }
+
+        private static void Abc_frAudioLink_LinkClicked(object? sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (sender is not LinkLabel linkLabel || linkLabel.Tag is not string audioFilePath || !File.Exists(audioFilePath))
+            {
+                return;
+            }
+
+            linkLabel.LinkVisited = true;
+
+            try
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = audioFilePath,
+                    UseShellExecute = true
+                });
+            }
+            catch
+            {
+            }
+        }
+
+        private static void Abc_enAudioLink_LinkClicked(object? sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (sender is not LinkLabel linkLabel || linkLabel.Tag is not string audioFilePath || !File.Exists(audioFilePath))
+            {
+                return;
+            }
+
+            linkLabel.LinkVisited = true;
+
+            try
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = audioFilePath,
+                    UseShellExecute = true
+                });
+            }
+            catch
+            {
+            }
         }
 
         #endregion Private
