@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Aide - Importer et associer des images</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 24px;
+            color: #222;
+        }
+
+        h1, h2 {
+            color: #1f4e79;
+        }
+
+        .note {
+            background-color: #f4f8fb;
+            border-left: 4px solid #1f4e79;
+            padding: 12px 16px;
+            margin: 16px 0;
+        }
+
+        code {
+            background-color: #f3f3f3;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aide - Ajouter ou associer des images aux mots</h1>
+
+    <p>
+        Cette application permet d'apprendre le vocabulaire et la prononciation de plusieurs groupes
+        d'informations pour les petits enfants, Stéphanie et sa famille.
+    </p>
+
+    <p>
+        Sous <strong>Options</strong>, il est possible d'afficher les images des mots lorsqu'ils sont cliqués,
+        s'il existe une image associée au mot ou à la mini-phrase.
+    </p>
+
+    <h2>Où se trouvent les documents officiels</h2>
+
+    <p>
+        Avant de commencer, les documents officiels contenant les mots en français, en anglais et l'URL de l'image
+        se trouvent dans :<br />
+        <code>C:\Users\{user}\AppData\Local\Apprendre\Data\</code>
+    </p>
+
+    <p>
+        Si vous recherchez ce répertoire, il se peut que certaines sections soient invisibles, comme
+        <em>AppData</em>. Faites une recherche pour vous aider à afficher ces dossiers.
+    </p>
+
+    <h2>Étapes pour importer une image</h2>
+
+    <ol>
+        <li>Sous <strong>Options</strong>, choisir <strong>Importer image</strong>.</li>
+        <li>Cliquer sur le mot auquel vous souhaitez associer une image.</li>
+        <li>
+            En cliquant sur le mot, une mini page web apparaîtra à droite de l'écran,
+            au même niveau que le mot sélectionné.
+        </li>
+        <li>Cliquer sur <strong>Image</strong> dans la mini page web.</li>
+        <li>Choisir une image appropriée.</li>
+        <li>
+            Faire un clic droit sur l'image choisie et sélectionner
+            <strong>Copier le lien de l'image</strong> (<em>Copy image link</em>).
+            <ul>
+                <li>Si cela fonctionne, une boîte verte vide apparaîtra.</li>
+                <li>L'important est que la barre en haut de la mini page web soit verte.</li>
+                <li>Cela signifie que l'image a bien été copiée.</li>
+            </ul>
+        </li>
+        <li>
+            Il est recommandé de sauvegarder souvent avec <strong>Save Json File</strong>,
+            idéalement après chaque nouvelle image ajoutée.
+            <ul>
+                <li>Parfois, lorsqu'il y a trop de nouvelles images, les fichiers se sauvegardent moins bien.</li>
+            </ul>
+        </li>
+        <li>Passer au mot suivant.</li>
+    </ol>
+
+    <h2>Remplacer une image</h2>
+
+    <p>
+        Pour remplacer une image, il suffit de suivre les mêmes étapes.
+    </p>
+
+    <div class="note">
+        <strong>Note :</strong> Étant donné que les fichiers modifiés se trouvent sur l'ordinateur de l'utilisateur,
+        dans le répertoire <code>C:\Users\{user}\AppData\Local\Apprendre\Data\</code>,
+        ces documents deviennent les documents officiels pour cet utilisateur.
+    </div>
+
+    <p>
+        Pour que les autres puissent en profiter, ils doivent être copiés dans
+        <code>_Apprendre\Data\</code>, puis un <em>push Git</em> doit être effectué afin qu'ils se retrouvent dans
+        <code>GitHub\CharlesNathalie\Apprendre\Data\</code>.
+    </p>
+
+    <div class="note">
+        <strong>Note 2 :</strong> Les documents <code>.json</code> envoyés dans GitHub serviront de documents de départ
+        pour les autres utilisateurs. Au lancement de l'application, ces documents <code>.json</code> seront copiés dans
+        le répertoire <code>C:\Users\{user}\AppData\Local\Apprendre\Data\</code> et deviendront les documents
+        officiels pour l'utilisateur.
+    </div>
+
+    <p>
+        Donc, si vous souhaitez que les autres puissent profiter de vos modifications, n'oubliez pas d'effectuer
+        un <em>push Git</em> après avoir copié les documents <code>.json</code> et ajouté ou modifié les images.
+    </p>
+</body>
+</html>

@@ -37,6 +37,7 @@ namespace Apprendre
         private const string LegumeSelection = "Légume / Vegetable";
         private const string SentimentSelection = "Sentiment / Feeling";
         private const string VerbeSelection = "Verbe / Verb";
+        private const string VerbeConjugerSelection = "Verbe Conjugaison / Conjugated Verb";
         private const string DefaultTranslateSourceLanguage = "fr";
         private const string DefaultTranslateTargetLanguage = "en";
         private const string DefaultImageSearchQuery = "image";
@@ -102,6 +103,7 @@ namespace Apprendre
             CommunicationSelection,
             FemininSelection,
             MasculinSelection,
+            VerbeConjugerSelection
         };
 
         private string _selectionFromCombobox = string.Empty;
@@ -525,6 +527,10 @@ namespace Apprendre
                     () => LoadDataList("Masculin.json", "Masculin", "Masculine"),
                     options => SaveDataListToJson("Masculin.json", options),
                     imageUrl => TryAssignImageToDataListItem(imageUrl, (item, url) => item.Url = url)),
+                [VerbeConjugerSelection] = new(
+                    LoadVerbeConjuger,
+                    options => { /* No need to save static information */ },
+                    null),
             };
         }
 
@@ -783,6 +789,6 @@ namespace Apprendre
         }
 
         #endregion WebView2 Clipboard Handling
-   
+
     }
 }
