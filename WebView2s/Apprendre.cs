@@ -158,6 +158,7 @@ public partial class Apprendre : Form
         InitializeDocking();
         InitializeHideImageOnNonImageClicks();
         ActiverPrononciationDesLabels(this);
+        UpdateLocalizedCheckboxTexts();
 
         InitialiserChoixListe();
 
@@ -192,6 +193,51 @@ public partial class Apprendre : Form
         }
     }
 
+    private void UpdateLocalizedCheckboxTexts()
+    {
+        checkBoxAfficherImage.Text = GetLocalizedText("Afficher l'image", "Show image");
+        checkBoxGetDataImage.Text = GetLocalizedText("Importer image", "Get image");
+        labelNathalieTelLast4Digit.Text = GetLocalizedText("Tel Nathalie dernier 4 chiffres", "Nathalie phone last 4 digits");
+    }
+
+    private string GetLocalizedText(string frenchText, string englishText)
+    {
+        return _isFr ? frenchText : englishText;
+    }
+
+    private string GetLocalizedMessageBoxTitle(MessageBoxIcon icon)
+    {
+        return icon == MessageBoxIcon.Warning
+            ? GetLocalizedText("Avertissement", "Warning")
+            : GetLocalizedText("Erreur", "Error");
+    }
+
+    private void ShowLocalizedMessage(string message, MessageBoxIcon icon)
+    {
+        MessageBox.Show(message, GetLocalizedMessageBoxTitle(icon), MessageBoxButtons.OK, icon);
+    }
+
+    private string GetDataInitializationErrorMessage(IEnumerable<string> failedFileNames)
+    {
+        return GetLocalizedText(
+            $"Impossible d'initialiser certains fichiers de données dans '{AppApprendreDataFolderPath}'.{Environment.NewLine}{string.Join(Environment.NewLine, failedFileNames)}",
+            $"Unable to initialize some data files in '{AppApprendreDataFolderPath}'.{Environment.NewLine}{string.Join(Environment.NewLine, failedFileNames)}");
+    }
+
+    private string GetSaveFileErrorMessage(string filePath, string errorMessage)
+    {
+        return GetLocalizedText(
+            $"Erreur lors de l'enregistrement du fichier '{filePath}' : {errorMessage}",
+            $"Error while saving file '{filePath}': {errorMessage}");
+    }
+
+    private string GetUnsupportedSelectionErrorMessage(string selection)
+    {
+        return GetLocalizedText(
+            $"La sélection '{selection}' n'est pas gérée pour l'enregistrement.",
+            $"The selection '{selection}' is not supported for saving.");
+    }
+
     #region Events
 
     private void btnLanguage_Click(object sender, EventArgs e)
@@ -200,16 +246,14 @@ public partial class Apprendre : Form
         {
             btnLanguage.Text = "Fr";
             _isFr = false;
-            checkBoxAfficherImage.Text = "Show image";
-            checkBoxGetDataImage.Text = "Get image";
         }
         else
         {
             btnLanguage.Text = "En";
             _isFr = true;
-            checkBoxAfficherImage.Text = "Afficher l'image";
-            checkBoxGetDataImage.Text = "Importer image";
         }
+
+        UpdateLocalizedCheckboxTexts();
     }
 
     private void btnOptions_Click(object sender, EventArgs e)
@@ -390,7 +434,7 @@ public partial class Apprendre : Form
         return folderPath;
     }
 
-    private static void EnsureApplicationDataFiles()
+    private void EnsureApplicationDataFiles()
     {
         List<string> failedFileNames = [];
 
@@ -425,11 +469,7 @@ public partial class Apprendre : Form
 
         if (failedFileNames.Count > 0)
         {
-            MessageBox.Show(
-                $"Impossible d'initialiser certains fichiers de données dans '{AppApprendreDataFolderPath}'.{Environment.NewLine}{string.Join(Environment.NewLine, failedFileNames)}",
-                "Erreur",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Warning);
+            ShowLocalizedMessage(GetDataInitializationErrorMessage(failedFileNames), MessageBoxIcon.Warning);
         }
     }
 
@@ -632,7 +672,7 @@ public partial class Apprendre : Form
         }
         catch (Exception ex)
         {
-            MessageBox.Show($"Erreur lors de l'enregistrement du fichier '{filePath}': {ex.Message}", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            ShowLocalizedMessage(GetSaveFileErrorMessage(filePath, ex.Message), MessageBoxIcon.Error);
         }
     }
 
@@ -647,7 +687,7 @@ public partial class Apprendre : Form
         }
         catch (Exception ex)
         {
-            MessageBox.Show($"Erreur lors de l'enregistrement du fichier '{filePath}': {ex.Message}", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            ShowLocalizedMessage(GetSaveFileErrorMessage(filePath, ex.Message), MessageBoxIcon.Error);
         }
     }
 
@@ -690,9 +730,9 @@ public partial class Apprendre : Form
         return true;
     }
 
-    private static void ShowUnsupportedSelectionError(string selection)
+    private void ShowUnsupportedSelectionError(string selection)
     {
-        MessageBox.Show($"Erreur: La sélection '{selection}' n'est pas gérée pour l'enregistrement.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        ShowLocalizedMessage(GetUnsupportedSelectionErrorMessage(selection), MessageBoxIcon.Error);
     }
 
     private sealed record SelectionConfiguration(

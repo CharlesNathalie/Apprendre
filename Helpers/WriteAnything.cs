@@ -236,8 +236,13 @@ public partial class Apprendre
         {
             UseWaitCursor = false;
             inputBox.Enabled = true;
-            inputBox.Focus();
-            inputBox.SelectionStart = inputBox.TextLength;
+            BeginInvoke(() =>
+            {
+                ActiveControl = inputBox;
+                inputBox.Focus();
+                inputBox.SelectionStart = inputBox.TextLength;
+                inputBox.SelectionLength = 0;
+            });
         }
     }
 
