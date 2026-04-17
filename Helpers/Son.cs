@@ -1,7 +1,4 @@
-﻿using Apprendre.Models;
-using System.Linq;
-
-namespace Apprendre
+﻿namespace Apprendre
 {
     public partial class Apprendre
     {

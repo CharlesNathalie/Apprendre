@@ -47,6 +47,8 @@
             btnOptions = new Button();
             btnLanguage = new Button();
             panelOptions = new Panel();
+            labelNathalieTelLast4Digit = new Label();
+            textBoxCode = new TextBox();
             panelGoogleTranslate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)WebView2WebGoogleTranslate).BeginInit();
             panelImageSearch.SuspendLayout();
@@ -201,7 +203,7 @@
             // 
             checkBoxGetDataImage.AutoSize = true;
             checkBoxGetDataImage.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBoxGetDataImage.Location = new Point(12, 241);
+            checkBoxGetDataImage.Location = new Point(12, 198);
             checkBoxGetDataImage.Name = "checkBoxGetDataImage";
             checkBoxGetDataImage.Size = new Size(137, 25);
             checkBoxGetDataImage.TabIndex = 8;
@@ -273,13 +275,32 @@
             // 
             panelOptions.BackColor = Color.LightGreen;
             panelOptions.BorderStyle = BorderStyle.Fixed3D;
+            panelOptions.Controls.Add(labelNathalieTelLast4Digit);
+            panelOptions.Controls.Add(textBoxCode);
             panelOptions.Controls.Add(checkBoxAfficherImage);
             panelOptions.Controls.Add(checkBoxGetDataImage);
             panelOptions.Location = new Point(850, 61);
             panelOptions.Name = "panelOptions";
-            panelOptions.Size = new Size(193, 293);
+            panelOptions.Size = new Size(193, 341);
             panelOptions.TabIndex = 16;
             panelOptions.Visible = false;
+            // 
+            // labelNathalieTelLast4Digit
+            // 
+            labelNathalieTelLast4Digit.AutoSize = true;
+            labelNathalieTelLast4Digit.Location = new Point(13, 264);
+            labelNathalieTelLast4Digit.Name = "labelNathalieTelLast4Digit";
+            labelNathalieTelLast4Digit.Size = new Size(159, 15);
+            labelNathalieTelLast4Digit.TabIndex = 15;
+            labelNathalieTelLast4Digit.Text = "Tel Nathalie dernier 4 chiffres";
+            // 
+            // textBoxCode
+            // 
+            textBoxCode.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxCode.Location = new Point(12, 293);
+            textBoxCode.Name = "textBoxCode";
+            textBoxCode.Size = new Size(157, 29);
+            textBoxCode.TabIndex = 14;
             // 
             // Apprendre
             // 
@@ -332,5 +353,7 @@
         private Button btnOptions;
         private Button btnLanguage;
         private Panel panelOptions;
+        private TextBox textBoxCode;
+        private Label labelNathalieTelLast4Digit;
     }
 }
