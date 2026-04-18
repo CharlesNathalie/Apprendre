@@ -29,6 +29,7 @@
 
             int contentLeft = 50;
             int availableWidth = Math.Max(320, ClientSize.Width - 100);
+            Control? navigationAnchor = null;
 
             Controls.Add(new Label
             {
@@ -82,6 +83,14 @@
             int navigationButtonX = contentLeft;
             int navigationButtonY = 236;
 
+            navigationAnchor = new Label
+            {
+                Location = new Point(contentLeft, navigationButtonY - 8),
+                Size = new Size(1, 1)
+            };
+
+            Controls.Add(navigationAnchor);
+
             for (int i = 0; i < sections.Count; i++)
             {
                 if (navigationButtonX + navigationButtonWidth > contentLeft + availableWidth)
@@ -124,7 +133,7 @@
 
             for (int sectionIndex = 0; sectionIndex < sections.Count; sectionIndex++)
             {
-                Panel sectionPanel = CreateVerbSectionPanel(sections[sectionIndex], sectionIndex, yPosition, sectionWidth);
+                Panel sectionPanel = CreateVerbSectionPanel(sections[sectionIndex], sectionIndex, yPosition, sectionWidth, navigationAnchor);
                 sectionAnchors.Add(sectionPanel);
                 Controls.Add(sectionPanel);
                 yPosition += sectionPanel.Height + 22;
@@ -134,10 +143,11 @@
             ResumeLayout();
         }
 
-        private Panel CreateVerbSectionPanel(VerbSection section, int sectionIndex, int yPosition, int sectionWidth)
+        private Panel CreateVerbSectionPanel(VerbSection section, int sectionIndex, int yPosition, int sectionWidth, Control navigationAnchor)
         {
             int tenseCardHeight = 288;
-            int sectionHeight = 88 + (section.Tenses.Count * tenseCardHeight) + ((section.Tenses.Count - 1) * 16) + 18;
+            int returnButtonHeight = 38;
+            int sectionHeight = 88 + (section.Tenses.Count * tenseCardHeight) + ((section.Tenses.Count - 1) * 16) + returnButtonHeight + 34;
 
             Panel sectionPanel = new Panel
             {
@@ -189,6 +199,26 @@
                 sectionPanel.Controls.Add(tensePanel);
                 tenseYPosition += tensePanel.Height + 16;
             }
+
+            Button returnToListButton = new Button
+            {
+                Text = "Retour à la liste principale / Back to main list",
+                Font = new Font("Segoe UI", 9.5F, FontStyle.Bold, GraphicsUnit.Point, 0),
+                BackColor = Color.FromArgb(239, 246, 255),
+                ForeColor = Color.FromArgb(30, 64, 175),
+                FlatStyle = FlatStyle.Flat,
+                Location = new Point(18, sectionHeight - returnButtonHeight - 16),
+                Size = new Size(Math.Min(290, Math.Max(230, sectionWidth - 54)), returnButtonHeight),
+                Cursor = Cursors.Hand,
+                UseVisualStyleBackColor = false
+            };
+
+            returnToListButton.FlatAppearance.BorderColor = Color.FromArgb(147, 197, 253);
+            returnToListButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(219, 234, 254);
+            returnToListButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(219, 234, 254);
+            returnToListButton.Click += (_, _) => ScrollControlIntoView(navigationAnchor);
+
+            sectionPanel.Controls.Add(returnToListButton);
 
             return sectionPanel;
         }
