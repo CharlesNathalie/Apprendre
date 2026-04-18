@@ -203,7 +203,7 @@
             // 
             checkBoxGetDataImage.AutoSize = true;
             checkBoxGetDataImage.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            checkBoxGetDataImage.Location = new Point(12, 198);
+            checkBoxGetDataImage.Location = new Point(12, 158);
             checkBoxGetDataImage.Name = "checkBoxGetDataImage";
             checkBoxGetDataImage.Size = new Size(137, 25);
             checkBoxGetDataImage.TabIndex = 8;
@@ -281,14 +281,14 @@
             panelOptions.Controls.Add(checkBoxGetDataImage);
             panelOptions.Location = new Point(850, 61);
             panelOptions.Name = "panelOptions";
-            panelOptions.Size = new Size(193, 341);
+            panelOptions.Size = new Size(193, 203);
             panelOptions.TabIndex = 16;
             panelOptions.Visible = false;
             // 
             // labelNathalieTelLast4Digit
             // 
             labelNathalieTelLast4Digit.AutoSize = true;
-            labelNathalieTelLast4Digit.Location = new Point(13, 264);
+            labelNathalieTelLast4Digit.Location = new Point(13, 75);
             labelNathalieTelLast4Digit.Name = "labelNathalieTelLast4Digit";
             labelNathalieTelLast4Digit.Size = new Size(159, 15);
             labelNathalieTelLast4Digit.TabIndex = 15;
@@ -297,7 +297,7 @@
             // textBoxCode
             // 
             textBoxCode.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxCode.Location = new Point(12, 293);
+            textBoxCode.Location = new Point(12, 104);
             textBoxCode.Name = "textBoxCode";
             textBoxCode.Size = new Size(157, 29);
             textBoxCode.TabIndex = 14;

@@ -446,6 +446,196 @@
                             ])
                     ]),
                 new VerbSection(
+                    "Marcher",
+                    "To walk",
+                    [
+                        new TenseSection(
+                            "Présent",
+                            "Present",
+                            [
+                                new ConjugationRow("Je", "I", "je marche", "I walk"),
+                                new ConjugationRow("Tu", "You", "tu marches", "you walk"),
+                                new ConjugationRow("Il / Elle", "He / She", "il marche / elle marche", "he walks / she walks"),
+                                new ConjugationRow("Nous", "We", "nous marchons", "we walk"),
+                                new ConjugationRow("Vous", "You", "vous marchez", "you walk"),
+                                new ConjugationRow("Ils / Elles", "They", "ils marchent / elles marchent", "they walk")
+                            ]),
+                        new TenseSection(
+                            "Imparfait",
+                            "Imperfect",
+                            [
+                                new ConjugationRow("Je", "I", "je marchais", "I was walking"),
+                                new ConjugationRow("Tu", "You", "tu marchais", "you were walking"),
+                                new ConjugationRow("Il / Elle", "He / She", "il marchait / elle marchait", "he was walking / she was walking"),
+                                new ConjugationRow("Nous", "We", "nous marchions", "we were walking"),
+                                new ConjugationRow("Vous", "You", "vous marchiez", "you were walking"),
+                                new ConjugationRow("Ils / Elles", "They", "ils marchaient / elles marchaient", "they were walking")
+                            ]),
+                        new TenseSection(
+                            "Passé composé",
+                            "Present perfect",
+                            [
+                                new ConjugationRow("Je", "I", "j'ai marché", "I have walked"),
+                                new ConjugationRow("Tu", "You", "tu as marché", "you have walked"),
+                                new ConjugationRow("Il / Elle", "He / She", "il a marché / elle a marché", "he has walked / she has walked"),
+                                new ConjugationRow("Nous", "We", "nous avons marché", "we have walked"),
+                                new ConjugationRow("Vous", "You", "vous avez marché", "you have walked"),
+                                new ConjugationRow("Ils / Elles", "They", "ils ont marché / elles ont marché", "they have walked")
+                            ])
+                    ]),
+                new VerbSection(
+                    "Finir",
+                    "To finish",
+                    [
+                        new TenseSection(
+                            "Présent",
+                            "Present",
+                            [
+                                new ConjugationRow("Je", "I", "je finis", "I finish"),
+                                new ConjugationRow("Tu", "You", "tu finis", "you finish"),
+                                new ConjugationRow("Il / Elle", "He / She", "il finit / elle finit", "he finishes / she finishes"),
+                                new ConjugationRow("Nous", "We", "nous finissons", "we finish"),
+                                new ConjugationRow("Vous", "You", "vous finissez", "you finish"),
+                                new ConjugationRow("Ils / Elles", "They", "ils finissent / elles finissent", "they finish")
+                            ]),
+                        new TenseSection(
+                            "Imparfait",
+                            "Imperfect",
+                            [
+                                new ConjugationRow("Je", "I", "je finissais", "I was finishing"),
+                                new ConjugationRow("Tu", "You", "tu finissais", "you were finishing"),
+                                new ConjugationRow("Il / Elle", "He / She", "il finissait / elle finissait", "he was finishing / she was finishing"),
+                                new ConjugationRow("Nous", "We", "nous finissions", "we were finishing"),
+                                new ConjugationRow("Vous", "You", "vous finissiez", "you were finishing"),
+                                new ConjugationRow("Ils / Elles", "They", "ils finissaient / elles finissaient", "they were finishing")
+                            ]),
+                        new TenseSection(
+                            "Passé composé",
+                            "Present perfect",
+                            [
+                                new ConjugationRow("Je", "I", "j'ai fini", "I have finished"),
+                                new ConjugationRow("Tu", "You", "tu as fini", "you have finished"),
+                                new ConjugationRow("Il / Elle", "He / She", "il a fini / elle a fini", "he has finished / she has finished"),
+                                new ConjugationRow("Nous", "We", "nous avons fini", "we have finished"),
+                                new ConjugationRow("Vous", "You", "vous avez fini", "you have finished"),
+                                new ConjugationRow("Ils / Elles", "They", "ils ont fini / elles ont fini", "they have finished")
+                            ])
+                    ]),
+                new VerbSection(
+                    "Aller",
+                    "To go",
+                    [
+                        new TenseSection(
+                            "Présent",
+                            "Present",
+                            [
+                                new ConjugationRow("Je", "I", "je vais", "I go"),
+                                new ConjugationRow("Tu", "You", "tu vas", "you go"),
+                                new ConjugationRow("Il / Elle", "He / She", "il va / elle va", "he goes / she goes"),
+                                new ConjugationRow("Nous", "We", "nous allons", "we go"),
+                                new ConjugationRow("Vous", "You", "vous allez", "you go"),
+                                new ConjugationRow("Ils / Elles", "They", "ils vont / elles vont", "they go")
+                            ]),
+                        new TenseSection(
+                            "Imparfait",
+                            "Imperfect",
+                            [
+                                new ConjugationRow("Je", "I", "j'allais", "I was going"),
+                                new ConjugationRow("Tu", "You", "tu allais", "you were going"),
+                                new ConjugationRow("Il / Elle", "He / She", "il allait / elle allait", "he was going / she was going"),
+                                new ConjugationRow("Nous", "We", "nous allions", "we were going"),
+                                new ConjugationRow("Vous", "You", "vous alliez", "you were going"),
+                                new ConjugationRow("Ils / Elles", "They", "ils allaient / elles allaient", "they were going")
+                            ]),
+                        new TenseSection(
+                            "Passé composé",
+                            "Present perfect",
+                            [
+                                new ConjugationRow("Je", "I", "je suis allé / je suis allée", "I have gone"),
+                                new ConjugationRow("Tu", "You", "tu es allé / tu es allée", "you have gone"),
+                                new ConjugationRow("Il / Elle", "He / She", "il est allé / elle est allée", "he has gone / she has gone"),
+                                new ConjugationRow("Nous", "We", "nous sommes allés / nous sommes allées", "we have gone"),
+                                new ConjugationRow("Vous", "You", "vous êtes allé / vous êtes allée / vous êtes allés / vous êtes allées", "you have gone"),
+                                new ConjugationRow("Ils / Elles", "They", "ils sont allés / elles sont allées", "they have gone")
+                            ])
+                    ]),
+                new VerbSection(
+                    "Faire",
+                    "To do",
+                    [
+                        new TenseSection(
+                            "Présent",
+                            "Present",
+                            [
+                                new ConjugationRow("Je", "I", "je fais", "I do"),
+                                new ConjugationRow("Tu", "You", "tu fais", "you do"),
+                                new ConjugationRow("Il / Elle", "He / She", "il fait / elle fait", "he does / she does"),
+                                new ConjugationRow("Nous", "We", "nous faisons", "we do"),
+                                new ConjugationRow("Vous", "You", "vous faites", "you do"),
+                                new ConjugationRow("Ils / Elles", "They", "ils font / elles font", "they do")
+                            ]),
+                        new TenseSection(
+                            "Imparfait",
+                            "Imperfect",
+                            [
+                                new ConjugationRow("Je", "I", "je faisais", "I was doing"),
+                                new ConjugationRow("Tu", "You", "tu faisais", "you were doing"),
+                                new ConjugationRow("Il / Elle", "He / She", "il faisait / elle faisait", "he was doing / she was doing"),
+                                new ConjugationRow("Nous", "We", "nous faisions", "we were doing"),
+                                new ConjugationRow("Vous", "You", "vous faisiez", "you were doing"),
+                                new ConjugationRow("Ils / Elles", "They", "ils faisaient / elles faisaient", "they were doing")
+                            ]),
+                        new TenseSection(
+                            "Passé composé",
+                            "Present perfect",
+                            [
+                                new ConjugationRow("Je", "I", "j'ai fait", "I have done"),
+                                new ConjugationRow("Tu", "You", "tu as fait", "you have done"),
+                                new ConjugationRow("Il / Elle", "He / She", "il a fait / elle a fait", "he has done / she has done"),
+                                new ConjugationRow("Nous", "We", "nous avons fait", "we have done"),
+                                new ConjugationRow("Vous", "You", "vous avez fait", "you have done"),
+                                new ConjugationRow("Ils / Elles", "They", "ils ont fait / elles ont fait", "they have done")
+                            ])
+                    ]),
+                new VerbSection(
+                    "Dire",
+                    "To say",
+                    [
+                        new TenseSection(
+                            "Présent",
+                            "Present",
+                            [
+                                new ConjugationRow("Je", "I", "je dis", "I say"),
+                                new ConjugationRow("Tu", "You", "tu dis", "you say"),
+                                new ConjugationRow("Il / Elle", "He / She", "il dit / elle dit", "he says / she says"),
+                                new ConjugationRow("Nous", "We", "nous disons", "we say"),
+                                new ConjugationRow("Vous", "You", "vous dites", "you say"),
+                                new ConjugationRow("Ils / Elles", "They", "ils disent / elles disent", "they say")
+                            ]),
+                        new TenseSection(
+                            "Imparfait",
+                            "Imperfect",
+                            [
+                                new ConjugationRow("Je", "I", "je disais", "I was saying"),
+                                new ConjugationRow("Tu", "You", "tu disais", "you were saying"),
+                                new ConjugationRow("Il / Elle", "He / She", "il disait / elle disait", "he was saying / she was saying"),
+                                new ConjugationRow("Nous", "We", "nous disions", "we were saying"),
+                                new ConjugationRow("Vous", "You", "vous disiez", "you were saying"),
+                                new ConjugationRow("Ils / Elles", "They", "ils disaient / elles disaient", "they were saying")
+                            ]),
+                        new TenseSection(
+                            "Passé composé",
+                            "Present perfect",
+                            [
+                                new ConjugationRow("Je", "I", "j'ai dit", "I have said"),
+                                new ConjugationRow("Tu", "You", "tu as dit", "you have said"),
+                                new ConjugationRow("Il / Elle", "He / She", "il a dit / elle a dit", "he has said / she has said"),
+                                new ConjugationRow("Nous", "We", "nous avons dit", "we have said"),
+                                new ConjugationRow("Vous", "You", "vous avez dit", "you have said"),
+                                new ConjugationRow("Ils / Elles", "They", "ils ont dit / elles ont dit", "they have said")
+                            ])
+                    ]),
+                new VerbSection(
                     "Manger",
                     "To eat",
                     [

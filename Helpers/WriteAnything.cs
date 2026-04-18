@@ -196,13 +196,27 @@ public partial class Apprendre
     {
         if (textBoxCode.Text.Length != 4)
         {
-            MessageBox.Show("SVP veuillez entrer un code à 4 chiffres valide.");
+            if (_isFr)
+            {
+                MessageBox.Show("SVP veuillez entrer un code à 4 chiffres valide. Voir sous Options.");
+            }
+            else
+            {
+                MessageBox.Show("Please enter a valid 4-digit code. See under Options.");
+            }
             return;
         }
 
         if (string.IsNullOrWhiteSpace(inputBox.Text))
         {
-            MessageBox.Show("SVP veuillez entrer un texte.");
+            if (_isFr)
+            {
+                MessageBox.Show("SVP veuillez entrer un texte.");
+            }
+            else
+            {
+                MessageBox.Show("Please enter a text.");
+            }
             return;
         }
 
@@ -211,7 +225,7 @@ public partial class Apprendre
 
         if (correctionLabel is null || translationLabel is null)
         {
-            MessageBox.Show("Impossible de trouver les étiquettes de résultat.");
+            if (_isFr)
             return;
         }
 
@@ -230,7 +244,14 @@ public partial class Apprendre
         }
         catch (Exception ex)
         {
-            MessageBox.Show($"Erreur OpenAI API: {ex.Message}");
+            if (_isFr)
+            {
+                MessageBox.Show($"Erreur OpenAI API: {ex.Message}");
+            }
+            else
+            {
+                MessageBox.Show($"OpenAI API Error: {ex.Message}");
+            }
         }
         finally
         {
@@ -240,8 +261,7 @@ public partial class Apprendre
             {
                 ActiveControl = inputBox;
                 inputBox.Focus();
-                inputBox.SelectionStart = inputBox.TextLength;
-                inputBox.SelectionLength = 0;
+                inputBox.SelectAll();
             });
         }
     }
