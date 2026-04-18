@@ -243,8 +243,10 @@ public partial class Apprendre
 
     private void ConfigurerPrononciationCompteHistoire(Label label)
     {
+        label.Click -= LabelPrononciation_Click;
         label.Click -= CompteHistoireResultLabel_Click;
         label.Click += CompteHistoireResultLabel_Click;
+        label.Disposed -= LabelPrononciation_Disposed;
         label.Disposed -= CompteHistoireResultLabel_Disposed;
         label.Disposed += CompteHistoireResultLabel_Disposed;
         label.MouseEnter -= LabelPrononciation_MouseEnter;
@@ -263,7 +265,9 @@ public partial class Apprendre
             return;
         }
 
+        label.Click -= LabelPrononciation_Click;
         label.Click -= CompteHistoireResultLabel_Click;
+        label.Disposed -= LabelPrononciation_Disposed;
         label.Disposed -= CompteHistoireResultLabel_Disposed;
         _apparencesInitialesDesLabels.Remove(label);
 
