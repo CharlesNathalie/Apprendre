@@ -8,6 +8,7 @@ public partial class Apprendre
     private bool _prononciationEnCours;
     private bool _prononciationEnAttente;
     private Point _positionDefilementAvantPrononciation = Point.Empty;
+    private System.Windows.Media.MediaPlayer? _lecteurPrononciation;
 
     #endregion Properties
 
@@ -34,54 +35,14 @@ public partial class Apprendre
         }
     }
 
-    private async Task ChargerGoogleTranslateEtPrononcerAsync(Label label)
+    private async Task ChargerMediaEtPrononcerAsync(Label label)
     {
-        if (!ControleWebView2EstValide(WebView2WebGoogleTranslate))
-        {
-            return;
-        }
-
         string url = CreerUrlPrononciation(label);
 
         _positionDefilementAvantPrononciation = new Point(Math.Abs(AutoScrollPosition.X), Math.Abs(AutoScrollPosition.Y));
-        _sourceWebView2 = url;
         _prononciationEnAttente = true;
 
-        try
-        {
-            await WebView2WebGoogleTranslate!.EnsureCoreWebView2Async();
-        }
-        catch (ObjectDisposedException)
-        {
-            _prononciationEnAttente = false;
-            return;
-        }
-        catch (InvalidOperationException)
-        {
-            _prononciationEnAttente = false;
-            return;
-        }
-
-        if (!CoreWebView2EstDisponible(WebView2WebGoogleTranslate))
-        {
-            _prononciationEnAttente = false;
-            return;
-        }
-
-        try
-        {
-            WebView2WebGoogleTranslate!.NavigateToString(CreerDocumentHtmlPourPrononciation(url));
-        }
-        catch (ObjectDisposedException)
-        {
-            _prononciationEnAttente = false;
-            return;
-        }
-        catch (InvalidOperationException)
-        {
-            _prononciationEnAttente = false;
-            return;
-        }
+        LirePrononciationAvecMedia(url);
 
         if (!IsDisposed && !Disposing && IsHandleCreated)
         {
@@ -103,12 +64,16 @@ public partial class Apprendre
         {
             panelImageSearch!.Location = new Point(400, 100);
             panelImageSearch!.Size = new Size(600, 500);
+
+            ResumeLayout(true);
+            PerformLayout();
+
+            await webView2ImageSearchRun(label);
+            return;
         }
 
         ResumeLayout(true);
         PerformLayout();
-
-        await webView2ImageSearchRun(label);
     }
 
     private void ConfigurerPrononciationDuLabel(Label label)
@@ -181,39 +146,20 @@ public partial class Apprendre
             && !webView2.Disposing;
     }
 
-    private static string CreerDocumentHtmlPourPrononciation(string url)
+    private void LecteurPrononciation_MediaEnded(object? sender, EventArgs e)
     {
-        return $$"""
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <title>Prononciation</title>
-        </head>
-        <body style="margin:0;background:transparent;overflow:hidden;">
-            <audio id="tts" autoplay src="{{url}}"></audio>
-            <script>
-                const audio = document.getElementById('tts');
+        if (sender is System.Windows.Media.MediaPlayer mediaPlayer)
+        {
+            try
+            {
+                mediaPlayer.Stop();
+            }
+            catch (InvalidOperationException)
+            {
+            }
+        }
 
-                function lancerLecture() {
-                    if (!audio) {
-                        return;
-                    }
-
-                    audio.currentTime = 0;
-                    const lecture = audio.play();
-                    if (lecture) {
-                        lecture.catch(() => window.setTimeout(() => audio.play().catch(() => { }), 150));
-                    }
-                }
-
-                audio?.addEventListener('canplaythrough', lancerLecture, { once: true });
-                window.addEventListener('load', lancerLecture, { once: true });
-            </script>
-        </body>
-        </html>
-        """;
-
+        NettoyerLecteurPrononciation(sender as System.Windows.Media.MediaPlayer);
     }
 
     private static string CreerUrlGoogleTranslatePourPrononciation(Label label)
@@ -231,6 +177,84 @@ public partial class Apprendre
         }
 
         return CreerUrlGoogleTranslatePourPrononciation(label);
+    }
+
+    private void LecteurPrononciation_MediaFailed(object? sender, System.Windows.Media.ExceptionEventArgs e)
+    {
+        NettoyerLecteurPrononciation(sender as System.Windows.Media.MediaPlayer);
+    }
+
+    private void LecteurPrononciation_MediaOpened(object? sender, EventArgs e)
+    {
+        if (sender is not System.Windows.Media.MediaPlayer mediaPlayer)
+        {
+            return;
+        }
+
+        _prononciationEnAttente = false;
+
+        try
+        {
+            mediaPlayer.Position = TimeSpan.Zero;
+            mediaPlayer.Play();
+        }
+        catch (InvalidOperationException)
+        {
+            NettoyerLecteurPrononciation(mediaPlayer);
+        }
+    }
+
+    private void LirePrononciationAvecMedia(string url)
+    {
+        ArreterPrononciationMedia();
+
+        System.Windows.Media.MediaPlayer mediaPlayer = new();
+        mediaPlayer.MediaOpened += LecteurPrononciation_MediaOpened;
+        mediaPlayer.MediaEnded += LecteurPrononciation_MediaEnded;
+        mediaPlayer.MediaFailed += LecteurPrononciation_MediaFailed;
+
+        _lecteurPrononciation = mediaPlayer;
+
+        try
+        {
+            mediaPlayer.Open(new Uri(url, UriKind.Absolute));
+        }
+        catch (InvalidOperationException)
+        {
+            NettoyerLecteurPrononciation(mediaPlayer);
+        }
+        catch (UriFormatException)
+        {
+            NettoyerLecteurPrononciation(mediaPlayer);
+        }
+    }
+
+    private void NettoyerLecteurPrononciation(System.Windows.Media.MediaPlayer? mediaPlayer)
+    {
+        if (mediaPlayer is null)
+        {
+            _prononciationEnAttente = false;
+            return;
+        }
+
+        mediaPlayer.MediaOpened -= LecteurPrononciation_MediaOpened;
+        mediaPlayer.MediaEnded -= LecteurPrononciation_MediaEnded;
+        mediaPlayer.MediaFailed -= LecteurPrononciation_MediaFailed;
+
+        try
+        {
+            mediaPlayer.Close();
+        }
+        catch (InvalidOperationException)
+        {
+        }
+
+        if (ReferenceEquals(_lecteurPrononciation, mediaPlayer))
+        {
+            _lecteurPrononciation = null;
+        }
+
+        _prononciationEnAttente = false;
     }
 
     private async void LabelPrononciation_Click(object? sender, EventArgs e)
@@ -290,7 +314,7 @@ public partial class Apprendre
         {
             if (string.IsNullOrEmpty(label.Tag?.ToString()))
             {
-                await ChargerGoogleTranslateEtPrononcerAsync(label);
+                await ChargerMediaEtPrononcerAsync(label);
                 return;
             }
 
@@ -304,7 +328,7 @@ public partial class Apprendre
                 ? childItemIndex
                 : -1;
 
-            await ChargerGoogleTranslateEtPrononcerAsync(label);
+            await ChargerMediaEtPrononcerAsync(label);
 
             if (checkBoxAfficherImage.Checked)
             {
@@ -324,6 +348,25 @@ public partial class Apprendre
         return _selectionFromCombobox == ABCSelection
             && label.Tag?.ToString()?.StartsWith("fr|", StringComparison.Ordinal) == true
             && File.Exists(AbcFrenchAudioFilePath);
+    }
+
+    private void ArreterPrononciationMedia()
+    {
+        if (_lecteurPrononciation is null)
+        {
+            _prononciationEnAttente = false;
+            return;
+        }
+
+        try
+        {
+            _lecteurPrononciation.Stop();
+        }
+        catch (InvalidOperationException)
+        {
+        }
+
+        NettoyerLecteurPrononciation(_lecteurPrononciation);
     }
 
     private async void webView2ImageSearch_NavigationCompleted(object? sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
@@ -375,37 +418,6 @@ public partial class Apprendre
         try
         {
             WebView2ImageSearch!.Source = new Uri($"https://www.google.com/search?q={Uri.EscapeDataString(query)}&sei=09bKaf6JKr-pptQPsoj-qAI", UriKind.Absolute);
-        }
-        catch (ObjectDisposedException)
-        {
-        }
-        catch (InvalidOperationException)
-        {
-        }
-    }
-
-    private async void WebView2WebGoogleTranslate_NavigationCompleted(object? sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
-    {
-        if (sender is not Microsoft.Web.WebView2.WinForms.WebView2 webView2
-            || !e.IsSuccess
-            || !CoreWebView2EstDisponible(webView2)
-            || !_prononciationEnAttente)
-        {
-            return;
-        }
-
-        _prononciationEnAttente = false;
-        AutoScrollPosition = _positionDefilementAvantPrononciation;
-
-        try
-        {
-            await webView2.ExecuteScriptAsync("""
-                const audio = document.getElementById('tts');
-                if (audio) {
-                    audio.currentTime = 0;
-                    audio.play().catch(() => { });
-                }
-                """);
         }
         catch (ObjectDisposedException)
         {

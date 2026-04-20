@@ -186,11 +186,13 @@ public partial class Apprendre
         if (label.Parent != null)
         {
             Point scrollPosition = CaptureScrollPosition();
+            Rectangle imageBounds = GetImageBounds(label.Parent);
 
             ExecuteWithoutResettingScroll(() =>
             {
                 WebView21.Visible = false;
-                WebView21.Bounds = new Rectangle(label.Parent.Location.X + 390, label.Parent.Location.Y + 5, 200, 200);
+                WebView21.Bounds = imageBounds;
+                WebView21.BringToFront();
             });
 
             await WebView21.EnsureCoreWebView2Async();
@@ -207,9 +209,13 @@ public partial class Apprendre
 
             WebView21.NavigateToString(html1);
 
-            //WebView21.BringToFront();
-            ExecuteWithoutResettingScroll(() => WebView21.Visible = true);
+            ExecuteWithoutResettingScroll(() =>
+            {
+                WebView21.Visible = true;
+                WebView21.BringToFront();
+            });
             RestoreScrollPosition(scrollPosition);
+            EnsureControlVisibleVertically(WebView21);
         }
     }
 
@@ -255,6 +261,64 @@ public partial class Apprendre
 
             AutoScrollPosition = scrollPosition;
         });
+    }
+
+    private void EnsureControlVisibleVertically(Control control)
+    {
+        if (IsDisposed || !IsHandleCreated || !control.Visible)
+        {
+            return;
+        }
+
+        BeginInvoke(() =>
+        {
+            if (IsDisposed || !IsHandleCreated || !control.Visible)
+            {
+                return;
+            }
+
+            int currentScrollX = HorizontalScroll.Visible ? HorizontalScroll.Value : 0;
+            int currentScrollY = VerticalScroll.Visible ? VerticalScroll.Value : 0;
+            int viewportTop = currentScrollY;
+            int viewportBottom = currentScrollY + ClientSize.Height;
+            int margin = 16;
+            int targetScrollY = currentScrollY;
+
+            if (control.Top - margin < viewportTop)
+            {
+                targetScrollY = Math.Max(0, control.Top - margin);
+            }
+            else if (control.Bottom + margin > viewportBottom)
+            {
+                targetScrollY = Math.Max(0, control.Bottom + margin - ClientSize.Height);
+            }
+
+            if (targetScrollY == currentScrollY)
+            {
+                return;
+            }
+
+            AutoScrollPosition = new Point(currentScrollX, targetScrollY);
+
+            BeginInvoke(() =>
+            {
+                if (IsDisposed || !IsHandleCreated || !control.Visible)
+                {
+                    return;
+                }
+
+                AutoScrollPosition = new Point(currentScrollX, targetScrollY);
+            });
+        });
+    }
+
+    private static Rectangle GetImageBounds(Control parent)
+    {
+        const int imageSize = 200;
+        const int topOffset = 5;
+        const int absoluteX = 440;
+
+        return new Rectangle(absoluteX, parent.Top + topOffset, imageSize, imageSize);
     }
 
     private static Label? FindLabelByTag(Control parent, string tag)

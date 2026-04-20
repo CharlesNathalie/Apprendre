@@ -9,8 +9,6 @@ public partial class Apprendre : Form
     private List<AnimauxMFP> _animauxMFPList { get; set; } = new List<AnimauxMFP>();
     private List<ABC> _abcList { get; set; } = new List<ABC>();
 
-    private string _sourceWebView2 = string.Empty;
-
     private const string ChooseSelection = "Choisir / Choose";
     private const string ABCSelection = "ABC / ABC";
     private const string SonSelection = "Son / Sound";
@@ -35,11 +33,15 @@ public partial class Apprendre : Form
     private const string CommunicationSelection = "Communication / Communication";
     private const string AdjectiveSelection = "Adjectif / Adjective";
     private const string LegumeSelection = "Légume / Vegetable";
+    private const string PaysPopulationSelection = "Pays et Population / Countries and Population";
+    private const string OiseauxDuCanadaSelection = "Oiseaux du Canada / Birds of Canada";
+    private const string MarquesDeVoitureSelection = "Marques de Voiture / Car Brands";
+    private const string PoissonsEtCrustacesDuCanadaSelection = "Poissons et Crustacés du Canada / Fish and Shellfish of Canada";
     private const string SentimentSelection = "Sentiment / Feeling";
     private const string VerbeSelection = "Verbe / Verb";
     private const string VerbeConjugerSelection = "Verbe Conjugaison / Conjugated Verb";
     private const string WriteAnythingSelection = "Écrire n'importe quoi / Write Anything";
-    private const string CompteHistoireSelection = "Compte Histoire / Story Account";
+    private const string CompteEtHistoireSelection = "Compte et Histoire / Stories";
     private const string DefaultTranslateSourceLanguage = "fr";
     private const string DefaultTranslateTargetLanguage = "en";
     private const string DefaultImageSearchQuery = "image";
@@ -64,11 +66,15 @@ public partial class Apprendre : Form
         "Legume.json",
         "Machinerie.json",
         "Maison.json",
+        "MarquesDeVoiture.json",
         "Masculin.json",
         "MoyenDeTransport.json",
         "Nombre.json",
         "NombreRomain.json",
         "Nourriture.json",
+        "OiseauxDuCanada.json",
+        "PoissonsEtCrustacesDuCanada.json",
+        "PaysPopulation.json",
         "SalleDeBain.json",
         "Sentiment.json",
         "SonFrancais.json",
@@ -102,12 +108,16 @@ public partial class Apprendre : Form
         VerbeSelection,
         MachinerieSelection,
         VoitureSelection,
+        PaysPopulationSelection,
+        OiseauxDuCanadaSelection,
+        MarquesDeVoitureSelection,
+        PoissonsEtCrustacesDuCanadaSelection,
         CommunicationSelection,
         FemininSelection,
         MasculinSelection,
         VerbeConjugerSelection,
         WriteAnythingSelection,
-        CompteHistoireSelection
+        CompteEtHistoireSelection,
     };
 
     private string _selectionFromCombobox = string.Empty;
@@ -395,25 +405,10 @@ public partial class Apprendre : Form
 
     private void InitializeDocking()
     {
-        panelGoogleTranslate!.Dock = DockStyle.None;
-        panelGoogleTranslate!.Location = new Point(-10000, -10000);
-        panelGoogleTranslate!.Size = new Size(1, 1);
-        panelGoogleTranslate!.Visible = true;
-        panelGoogleTranslate!.TabStop = false;
-        WebView2WebGoogleTranslate!.Dock = DockStyle.Fill;
-        WebView2WebGoogleTranslate!.Visible = true;
-        WebView2WebGoogleTranslate!.TabStop = false;
-        WebView2WebGoogleTranslate!.Source = CreateGoogleTranslateUri(DefaultTranslateSourceLanguage, DefaultTranslateTargetLanguage);
         WebView2ImageSearch!.Source = CreateImageSearchUri(DefaultImageSearchQuery);
 
         AutoScroll = true;
 
-    }
-
-    private static Uri CreateGoogleTranslateUri(string sourceLanguage, string targetLanguage)
-    {
-        string query = $"sl={Uri.EscapeDataString(sourceLanguage)}&tl={Uri.EscapeDataString(targetLanguage)}&op=translate";
-        return new Uri($"https://translate.google.com/?{query}", UriKind.Absolute);
     }
 
     private static Uri CreateImageSearchUri(string searchQuery)
@@ -634,6 +629,22 @@ public partial class Apprendre : Form
                 () => LoadDataList("Voiture.json", "Voiture", "Car"),
                 options => SaveDataListToJson("Voiture.json", options),
                 imageUrl => TryAssignImageToDataListItem(imageUrl, (item, url) => item.Url = url)),
+            [PaysPopulationSelection] = new(
+                LoadPaysPopulation,
+                options => { /* No need to save static information */ },
+                null),
+            [OiseauxDuCanadaSelection] = new(
+                () => LoadDataList("OiseauxDuCanada.json", "Oiseaux du Canada", "Birds of Canada"),
+                options => SaveDataListToJson("OiseauxDuCanada.json", options),
+                imageUrl => TryAssignImageToDataListItem(imageUrl, (item, url) => item.Url = url)),
+            [PoissonsEtCrustacesDuCanadaSelection] = new(
+                () => LoadDataList("PoissonsEtCrustacesDuCanada.json", "Poissons et Crustacés du Canada", "Fish and Shellfish of Canada"),
+                options => SaveDataListToJson("PoissonsEtCrustacesDuCanada.json", options),
+                imageUrl => TryAssignImageToDataListItem(imageUrl, (item, url) => item.Url = url)),
+            [MarquesDeVoitureSelection] = new(
+                () => LoadDataList("MarquesDeVoiture.json", "Marques de Voiture", "Car Brands"),
+                options => SaveDataListToJson("MarquesDeVoiture.json", options),
+                imageUrl => TryAssignImageToDataListItem(imageUrl, (item, url) => item.Url = url)),
             [CommunicationSelection] = new(
                 () => LoadDataList("Communication.json", "Communication", "Communication"),
                 options => SaveDataListToJson("Communication.json", options),
@@ -654,8 +665,8 @@ public partial class Apprendre : Form
                 LoadWriteAnything,
                 options => { /* No need to save static information */ },
                 null),
-            [CompteHistoireSelection] = new(
-                LoadCompteHistoire,
+            [CompteEtHistoireSelection] = new(
+                LoadCompteEtHistoire,
                 options => { /* No need to save static information */ },
                 null),
         };
@@ -916,5 +927,4 @@ public partial class Apprendre : Form
     }
 
     #endregion WebView2 Clipboard Handling
-
 }

@@ -31,8 +31,6 @@
             lblLearn = new Label();
             lblApprendre = new Label();
             comboBoxApprendre = new ComboBox();
-            panelGoogleTranslate = new Panel();
-            WebView2WebGoogleTranslate = new Microsoft.Web.WebView2.WinForms.WebView2();
             panelImageSearch = new Panel();
             WebView2ImageSearch = new Microsoft.Web.WebView2.WinForms.WebView2();
             panelImageSearchTop = new Panel();
@@ -49,8 +47,6 @@
             panelOptions = new Panel();
             labelNathalieTelLast4Digit = new Label();
             textBoxCode = new TextBox();
-            panelGoogleTranslate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)WebView2WebGoogleTranslate).BeginInit();
             panelImageSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)WebView2ImageSearch).BeginInit();
             panelImageSearchTop.SuspendLayout();
@@ -94,31 +90,6 @@
             comboBoxApprendre.Size = new Size(601, 29);
             comboBoxApprendre.TabIndex = 4;
             comboBoxApprendre.SelectedIndexChanged += comboBoxApprendre_SelectedIndexChanged;
-            // 
-            // panelGoogleTranslate
-            // 
-            panelGoogleTranslate.BackColor = Color.Green;
-            panelGoogleTranslate.Controls.Add(WebView2WebGoogleTranslate);
-            panelGoogleTranslate.Location = new Point(515, 102);
-            panelGoogleTranslate.Name = "panelGoogleTranslate";
-            panelGoogleTranslate.Padding = new Padding(5);
-            panelGoogleTranslate.Size = new Size(85, 52);
-            panelGoogleTranslate.TabIndex = 1;
-            panelGoogleTranslate.Visible = false;
-            // 
-            // WebView2WebGoogleTranslate
-            // 
-            WebView2WebGoogleTranslate.AllowExternalDrop = true;
-            WebView2WebGoogleTranslate.CreationProperties = null;
-            WebView2WebGoogleTranslate.DefaultBackgroundColor = Color.White;
-            WebView2WebGoogleTranslate.Dock = DockStyle.Fill;
-            WebView2WebGoogleTranslate.Location = new Point(5, 5);
-            WebView2WebGoogleTranslate.Name = "WebView2WebGoogleTranslate";
-            WebView2WebGoogleTranslate.Size = new Size(75, 42);
-            WebView2WebGoogleTranslate.TabIndex = 4;
-            WebView2WebGoogleTranslate.Visible = false;
-            WebView2WebGoogleTranslate.ZoomFactor = 1D;
-            WebView2WebGoogleTranslate.NavigationCompleted += WebView2WebGoogleTranslate_NavigationCompleted;
             // 
             // panelImageSearch
             // 
@@ -314,13 +285,10 @@
             Controls.Add(lblShowError);
             Controls.Add(panelImageSearch);
             Controls.Add(lblLearn);
-            Controls.Add(panelGoogleTranslate);
             Controls.Add(lblApprendre);
             Controls.Add(comboBoxApprendre);
             Name = "Apprendre";
             Text = "Apprendre";
-            panelGoogleTranslate.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)WebView2WebGoogleTranslate).EndInit();
             panelImageSearch.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)WebView2ImageSearch).EndInit();
             panelImageSearchTop.ResumeLayout(false);
@@ -334,8 +302,6 @@
         }
 
         #endregion Code généré par le concepteur Windows Form
-        private Panel panelGoogleTranslate;
-        private Microsoft.Web.WebView2.WinForms.WebView2 WebView2WebGoogleTranslate;
         private ComboBox comboBoxApprendre;
         private Label lblLearn;
         private Label lblApprendre;

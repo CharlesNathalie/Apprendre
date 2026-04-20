@@ -7,7 +7,7 @@ public partial class Apprendre
 {
     #region Properties
 
-    private SpeechSynthesizer? _compteHistoireSpeechSynthesizer;
+    private SpeechSynthesizer? _compteEtHistoireSpeechSynthesizer;
 
     #endregion Properties
 
@@ -17,14 +17,14 @@ public partial class Apprendre
 
     #region Private
 
-    private void LoadCompteHistoire()
+    private void LoadCompteEtHistoire()
     {
         ClearDynamicLearningControls();
 
-        ShowCompteHistoireOnPanelWorking();
+        ShowCompteEtHistoireOnPanelWorking();
     }
 
-    private void ShowCompteHistoireOnPanelWorking()
+    private void ShowCompteEtHistoireOnPanelWorking()
     {
         SuspendLayout();
 
@@ -53,7 +53,7 @@ public partial class Apprendre
 
         RichTextBox promptRichTextBox = new()
         {
-            Name = "rtbCompteHistoirePrompt",
+            Name = "rtbCompteEtHistoirePrompt",
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(31, 41, 55),
             BackColor = Color.White,
@@ -65,7 +65,7 @@ public partial class Apprendre
 
         Button createButton = new()
         {
-            Name = "btnCompteHistoireCreate",
+            Name = "btnCompteEtHistoireCreate",
             Text = "Créer / Create",
             Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0),
             BackColor = Color.FromArgb(219, 234, 254),
@@ -84,7 +84,7 @@ public partial class Apprendre
 
         Button stopButton = new()
         {
-            Name = "btnCompteHistoireStop",
+            Name = "btnCompteEtHistoireStop",
             Text = "Arrêter / Stop",
             Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0),
             BackColor = Color.FromArgb(254, 226, 226),
@@ -100,11 +100,11 @@ public partial class Apprendre
         stopButton.FlatAppearance.BorderColor = Color.FromArgb(252, 165, 165);
         stopButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(254, 202, 202);
         stopButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(254, 202, 202);
-        stopButton.Click += (_, _) => StopCompteHistoirePrononciation();
+        stopButton.Click += (_, _) => StopCompteEtHistoirePrononciation();
 
         Label resultLabelFr = new()
         {
-            Name = "lblCompteHistoireResultFr",
+            Name = "lblCompteEtHistoireResultFr",
             Tag = "fr",
             Text = string.Empty,
             Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0),
@@ -117,7 +117,7 @@ public partial class Apprendre
 
         Label resultLabelEn = new()
         {
-            Name = "lblCompteHistoireResultEn",
+            Name = "lblCompteEtHistoireResultEn",
             Tag = "en",
             Text = string.Empty,
             Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0),
@@ -128,19 +128,19 @@ public partial class Apprendre
             Visible = false
         };
 
-        createButton.Click += async (_, _) => await ProcessCompteHistoirePromptAsync(promptRichTextBox, resultLabelFr, resultLabelEn, createButton);
+        createButton.Click += async (_, _) => await ProcessCompteEtHistoirePromptAsync(promptRichTextBox, resultLabelFr, resultLabelEn, createButton);
 
         Controls.Add(resultLabelFr);
         Controls.Add(resultLabelEn);
-        ConfigurerPrononciationCompteHistoire(resultLabelFr);
-        ConfigurerPrononciationCompteHistoire(resultLabelEn);
+        ConfigurerPrononciationCompteEtHistoire(resultLabelFr);
+        ConfigurerPrononciationCompteEtHistoire(resultLabelEn);
 
         AutoScrollMinSize = new Size(0, sectionTop + 500);
 
         ResumeLayout();
     }
 
-    private async Task ProcessCompteHistoirePromptAsync(RichTextBox promptRichTextBox, Label resultLabelFr, Label resultLabelEn, Button createButton)
+    private async Task ProcessCompteEtHistoirePromptAsync(RichTextBox promptRichTextBox, Label resultLabelFr, Label resultLabelEn, Button createButton)
     {
         if (textBoxCode.Text.Length != 4)
         {
@@ -178,7 +178,7 @@ public partial class Apprendre
 
         try
         {
-            string responseText = await SendOpenAiPromptAsync(BuildCompteHistoirePrompt(promptRichTextBox.Text.Trim()));
+            string responseText = await SendOpenAiPromptAsync(BuildCompteEtHistoirePrompt(promptRichTextBox.Text.Trim()));
             bool useFrenchLabel = ShouldUseFrenchResultLabel(promptRichTextBox.Text);
             Label resultLabel = useFrenchLabel ? resultLabelFr : resultLabelEn;
             Label hiddenLabel = useFrenchLabel ? resultLabelEn : resultLabelFr;
@@ -236,16 +236,16 @@ public partial class Apprendre
         return _isFr;
     }
 
-    private static string BuildCompteHistoirePrompt(string prompt)
+    private static string BuildCompteEtHistoirePrompt(string prompt)
     {
         return $"{prompt}{Environment.NewLine}{Environment.NewLine}Important: écris seulement une histoire de moins de 1000 mots. Return only the story, with fewer than 1000 words.";
     }
 
-    private void ConfigurerPrononciationCompteHistoire(Label label)
+    private void ConfigurerPrononciationCompteEtHistoire(Label label)
     {
         label.Click -= LabelPrononciation_Click;
-        label.Click -= CompteHistoireResultLabel_Click;
-        label.Click += CompteHistoireResultLabel_Click;
+        label.Click -= CompteEtHistoireResultLabel_Click;
+        label.Click += CompteEtHistoireResultLabel_Click;
         label.Disposed -= LabelPrononciation_Disposed;
         label.Disposed -= CompteHistoireResultLabel_Disposed;
         label.Disposed += CompteHistoireResultLabel_Disposed;
@@ -266,72 +266,72 @@ public partial class Apprendre
         }
 
         label.Click -= LabelPrononciation_Click;
-        label.Click -= CompteHistoireResultLabel_Click;
+        label.Click -= CompteEtHistoireResultLabel_Click;
         label.Disposed -= LabelPrononciation_Disposed;
         label.Disposed -= CompteHistoireResultLabel_Disposed;
         _apparencesInitialesDesLabels.Remove(label);
 
-        if (Controls.Find("lblCompteHistoireResultFr", true).Length == 0
-            && Controls.Find("lblCompteHistoireResultEn", true).Length == 0)
+        if (Controls.Find("lblCompteEtHistoireResultFr", true).Length == 0
+            && Controls.Find("lblCompteEtHistoireResultEn", true).Length == 0)
         {
-            StopCompteHistoirePrononciation();
-            _compteHistoireSpeechSynthesizer?.Dispose();
-            _compteHistoireSpeechSynthesizer = null;
+            StopCompteEtHistoirePrononciation();
+            _compteEtHistoireSpeechSynthesizer?.Dispose();
+            _compteEtHistoireSpeechSynthesizer = null;
         }
     }
 
-    private void CompteHistoireResultLabel_Click(object? sender, EventArgs e)
+    private void CompteEtHistoireResultLabel_Click(object? sender, EventArgs e)
     {
         if (sender is not Label label || !label.Visible || string.IsNullOrWhiteSpace(label.Text))
         {
             return;
         }
 
-        PrononcerResultatCompteHistoire(label);
+        PrononcerResultatCompteEtHistoire(label);
     }
 
-    private void PrononcerResultatCompteHistoire(Label label)
+    private void PrononcerResultatCompteEtHistoire(Label label)
     {
-        _compteHistoireSpeechSynthesizer ??= new SpeechSynthesizer();
-        StopCompteHistoirePrononciation();
+        _compteEtHistoireSpeechSynthesizer ??= new SpeechSynthesizer();
+        StopCompteEtHistoirePrononciation();
 
         CultureInfo culture = (label.Tag?.ToString() ?? string.Empty).StartsWith("fr", StringComparison.OrdinalIgnoreCase)
             ? CultureInfo.GetCultureInfo("fr-CA")
             : CultureInfo.GetCultureInfo("en-US");
 
-        SelectionnerVoixCompteHistoire(culture);
-        _compteHistoireSpeechSynthesizer.SpeakAsync(label.Text);
+        SelectionnerVoixCompteEtHistoire(culture);
+        _compteEtHistoireSpeechSynthesizer.SpeakAsync(label.Text);
     }
 
-    private void SelectionnerVoixCompteHistoire(CultureInfo culture)
+    private void SelectionnerVoixCompteEtHistoire(CultureInfo culture)
     {
-        if (_compteHistoireSpeechSynthesizer is null)
+        if (_compteEtHistoireSpeechSynthesizer is null)
         {
             return;
         }
 
-        VoiceInfo? installedVoice = _compteHistoireSpeechSynthesizer
+        VoiceInfo? installedVoice = _compteEtHistoireSpeechSynthesizer
             .GetInstalledVoices()
             .Select(voice => voice.VoiceInfo)
             .FirstOrDefault(voice => string.Equals(voice.Culture.Name, culture.Name, StringComparison.OrdinalIgnoreCase));
 
-        installedVoice ??= _compteHistoireSpeechSynthesizer
+        installedVoice ??= _compteEtHistoireSpeechSynthesizer
             .GetInstalledVoices()
             .Select(voice => voice.VoiceInfo)
             .FirstOrDefault(voice => string.Equals(voice.Culture.TwoLetterISOLanguageName, culture.TwoLetterISOLanguageName, StringComparison.OrdinalIgnoreCase));
 
         if (installedVoice is not null)
         {
-            _compteHistoireSpeechSynthesizer.SelectVoice(installedVoice.Name);
+            _compteEtHistoireSpeechSynthesizer.SelectVoice(installedVoice.Name);
             return;
         }
 
-        _compteHistoireSpeechSynthesizer.SelectVoiceByHints(VoiceGender.NotSet, VoiceAge.NotSet, 0, culture);
+        _compteEtHistoireSpeechSynthesizer.SelectVoiceByHints(VoiceGender.NotSet, VoiceAge.NotSet, 0, culture);
     }
 
-    private void StopCompteHistoirePrononciation()
+    private void StopCompteEtHistoirePrononciation()
     {
-        _compteHistoireSpeechSynthesizer?.SpeakAsyncCancelAll();
+        _compteEtHistoireSpeechSynthesizer?.SpeakAsyncCancelAll();
     }
 
     #endregion Private

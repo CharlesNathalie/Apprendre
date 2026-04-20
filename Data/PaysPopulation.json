@@ -1,0 +1,1374 @@
+[
+  {
+    "countryNameFr": "Inde",
+    "countryNameEn": "India",
+    "population": 1417492000,
+    "capitalFr": "New Delhi",
+    "capitalEn": "New Delhi"
+  },
+  {
+    "countryNameFr": "Chine",
+    "countryNameEn": "China",
+    "population": 1408280000,
+    "capitalFr": "Pékin",
+    "capitalEn": "Beijing"
+  },
+  {
+    "countryNameFr": "États-Unis",
+    "countryNameEn": "United States",
+    "population": 340111000,
+    "capitalFr": "Washington",
+    "capitalEn": "Washington, D.C."
+  },
+  {
+    "countryNameFr": "Indonésie",
+    "countryNameEn": "Indonesia",
+    "population": 284439000,
+    "capitalFr": "Jakarta",
+    "capitalEn": "Jakarta"
+  },
+  {
+    "countryNameFr": "Pakistan",
+    "countryNameEn": "Pakistan",
+    "population": 241499000,
+    "capitalFr": "Islamabad",
+    "capitalEn": "Islamabad"
+  },
+  {
+    "countryNameFr": "Nigéria",
+    "countryNameEn": "Nigeria",
+    "population": 223800000,
+    "capitalFr": "Abuja",
+    "capitalEn": "Abuja"
+  },
+  {
+    "countryNameFr": "Brésil",
+    "countryNameEn": "Brazil",
+    "population": 213421000,
+    "capitalFr": "Brasilia",
+    "capitalEn": "Brasília"
+  },
+  {
+    "countryNameFr": "Bangladesh",
+    "countryNameEn": "Bangladesh",
+    "population": 169829000,
+    "capitalFr": "Dacca",
+    "capitalEn": "Dhaka"
+  },
+  {
+    "countryNameFr": "Russie",
+    "countryNameEn": "Russia",
+    "population": 146028000,
+    "capitalFr": "Moscou",
+    "capitalEn": "Moscow"
+  },
+  {
+    "countryNameFr": "Mexique",
+    "countryNameEn": "Mexico",
+    "population": 130576000,
+    "capitalFr": "Mexico",
+    "capitalEn": "Mexico City"
+  },
+  {
+    "countryNameFr": "Japon",
+    "countryNameEn": "Japan",
+    "population": 123210000,
+    "capitalFr": "Tokyo",
+    "capitalEn": "Tokyo"
+  },
+  {
+    "countryNameFr": "Philippines",
+    "countryNameEn": "Philippines",
+    "population": 114124000,
+    "capitalFr": "Manille",
+    "capitalEn": "Manila"
+  },
+  {
+    "countryNameFr": "Congo (Rép. dém.)",
+    "countryNameEn": "DR Congo",
+    "population": 112832000,
+    "capitalFr": "Kinshasa",
+    "capitalEn": "Kinshasa"
+  },
+  {
+    "countryNameFr": "Éthiopie",
+    "countryNameEn": "Ethiopia",
+    "population": 111653000,
+    "capitalFr": "Addis-Abeba",
+    "capitalEn": "Addis Ababa"
+  },
+  {
+    "countryNameFr": "Égypte",
+    "countryNameEn": "Egypt",
+    "population": 107271000,
+    "capitalFr": "Le Caire",
+    "capitalEn": "Cairo"
+  },
+  {
+    "countryNameFr": "Viêt Nam",
+    "countryNameEn": "Vietnam",
+    "population": 101344000,
+    "capitalFr": "Hanoï",
+    "capitalEn": "Hanoi"
+  },
+  {
+    "countryNameFr": "Iran",
+    "countryNameEn": "Iran",
+    "population": 85961000,
+    "capitalFr": "Téhéran",
+    "capitalEn": "Tehran"
+  },
+  {
+    "countryNameFr": "Turquie",
+    "countryNameEn": "Turkey",
+    "population": 85665000,
+    "capitalFr": "Ankara",
+    "capitalEn": "Ankara"
+  },
+  {
+    "countryNameFr": "Allemagne",
+    "countryNameEn": "Germany",
+    "population": 83491000,
+    "capitalFr": "Berlin",
+    "capitalEn": "Berlin"
+  },
+  {
+    "countryNameFr": "Royaume-Uni",
+    "countryNameEn": "United Kingdom",
+    "population": 69281000,
+    "capitalFr": "Londres",
+    "capitalEn": "London"
+  },
+  {
+    "countryNameFr": "Tanzanie",
+    "countryNameEn": "Tanzania",
+    "population": 68153000,
+    "capitalFr": "Dodoma",
+    "capitalEn": "Dodoma"
+  },
+  {
+    "countryNameFr": "France",
+    "countryNameEn": "France",
+    "population": 66352000,
+    "capitalFr": "Paris",
+    "capitalEn": "Paris"
+  },
+  {
+    "countryNameFr": "Thaïlande",
+    "countryNameEn": "Thailand",
+    "population": 65860000,
+    "capitalFr": "Bangkok",
+    "capitalEn": "Bangkok"
+  },
+  {
+    "countryNameFr": "Afrique du Sud",
+    "countryNameEn": "South Africa",
+    "population": 63101000,
+    "capitalFr": "Bloemfontein",
+    "capitalEn": "Bloemfontein"
+  },
+  {
+    "countryNameFr": "Italie",
+    "countryNameEn": "Italy",
+    "population": 58928000,
+    "capitalFr": "Rome",
+    "capitalEn": "Rome"
+  },
+  {
+    "countryNameFr": "Kenya",
+    "countryNameEn": "Kenya",
+    "population": 53331000,
+    "capitalFr": "Nairobi",
+    "capitalEn": "Nairobi"
+  },
+  {
+    "countryNameFr": "Colombie",
+    "countryNameEn": "Colombia",
+    "population": 53057000,
+    "capitalFr": "Bogota",
+    "capitalEn": "Bogotá"
+  },
+  {
+    "countryNameFr": "Soudan",
+    "countryNameEn": "Sudan",
+    "population": 51662000,
+    "capitalFr": "Khartoum",
+    "capitalEn": "Khartoum"
+  },
+  {
+    "countryNameFr": "Birmanie",
+    "countryNameEn": "Myanmar",
+    "population": 51317000,
+    "capitalFr": "Naypyidaw",
+    "capitalEn": "Naypyidaw"
+  },
+  {
+    "countryNameFr": "Corée du Sud",
+    "countryNameEn": "South Korea",
+    "population": 51160000,
+    "capitalFr": "Séoul",
+    "capitalEn": "Seoul"
+  },
+  {
+    "countryNameFr": "Espagne",
+    "countryNameEn": "Spain",
+    "population": 49316000,
+    "capitalFr": "Madrid",
+    "capitalEn": "Madrid"
+  },
+  {
+    "countryNameFr": "Algérie",
+    "countryNameEn": "Algeria",
+    "population": 47400000,
+    "capitalFr": "Alger",
+    "capitalEn": "Algiers"
+  },
+  {
+    "countryNameFr": "Argentine",
+    "countryNameEn": "Argentina",
+    "population": 46735000,
+    "capitalFr": "Buenos Aires",
+    "capitalEn": "Buenos Aires"
+  },
+  {
+    "countryNameFr": "Irak",
+    "countryNameEn": "Iraq",
+    "population": 46119000,
+    "capitalFr": "Bagdad",
+    "capitalEn": "Baghdad"
+  },
+  {
+    "countryNameFr": "Ouganda",
+    "countryNameEn": "Uganda",
+    "population": 45905000,
+    "capitalFr": "Kampala",
+    "capitalEn": "Kampala"
+  },
+  {
+    "countryNameFr": "Afghanistan",
+    "countryNameEn": "Afghanistan",
+    "population": 43844000,
+    "capitalFr": "Kaboul",
+    "capitalEn": "Kabul"
+  },
+  {
+    "countryNameFr": "Canada",
+    "countryNameEn": "Canada",
+    "population": 41652000,
+    "capitalFr": "Ottawa",
+    "capitalEn": "Ottawa"
+  },
+  {
+    "countryNameFr": "Ouzbékistan",
+    "countryNameEn": "Uzbekistan",
+    "population": 37860000,
+    "capitalFr": "Tachkent",
+    "capitalEn": "Tashkent"
+  },
+  {
+    "countryNameFr": "Pologne",
+    "countryNameEn": "Poland",
+    "population": 37392000,
+    "capitalFr": "Varsovie",
+    "capitalEn": "Warsaw"
+  },
+  {
+    "countryNameFr": "Maroc",
+    "countryNameEn": "Morocco",
+    "population": 36828000,
+    "capitalFr": "Rabat",
+    "capitalEn": "Rabat"
+  },
+  {
+    "countryNameFr": "Angola",
+    "countryNameEn": "Angola",
+    "population": 36171000,
+    "capitalFr": "Luanda",
+    "capitalEn": "Luanda"
+  },
+  {
+    "countryNameFr": "Arabie Saoudite",
+    "countryNameEn": "Saudi Arabia",
+    "population": 35300000,
+    "capitalFr": "Riyad",
+    "capitalEn": "Riyadh"
+  },
+  {
+    "countryNameFr": "Pérou",
+    "countryNameEn": "Peru",
+    "population": 34350000,
+    "capitalFr": "Lima",
+    "capitalEn": "Lima"
+  },
+  {
+    "countryNameFr": "Malaisie",
+    "countryNameEn": "Malaysia",
+    "population": 34232000,
+    "capitalFr": "Kuala Lumpur",
+    "capitalEn": "Kuala Lumpur"
+  },
+  {
+    "countryNameFr": "Mozambique",
+    "countryNameEn": "Mozambique",
+    "population": 34090000,
+    "capitalFr": "Maputo",
+    "capitalEn": "Maputo"
+  },
+  {
+    "countryNameFr": "Ghana",
+    "countryNameEn": "Ghana",
+    "population": 33742000,
+    "capitalFr": "Accra",
+    "capitalEn": "Accra"
+  },
+  {
+    "countryNameFr": "Ukraine",
+    "countryNameEn": "Ukraine",
+    "population": 32862000,
+    "capitalFr": "Kiev",
+    "capitalEn": "Kyiv"
+  },
+  {
+    "countryNameFr": "Yémen",
+    "countryNameEn": "Yemen",
+    "population": 32685000,
+    "capitalFr": "Aden",
+    "capitalEn": "Aden"
+  },
+  {
+    "countryNameFr": "Madagascar",
+    "countryNameEn": "Madagascar",
+    "population": 31727000,
+    "capitalFr": "Antananarivo",
+    "capitalEn": "Antananarivo"
+  },
+  {
+    "countryNameFr": "Côte d'Ivoire",
+    "countryNameEn": "Ivory Coast",
+    "population": 31719000,
+    "capitalFr": "Yamoussoukro",
+    "capitalEn": "Yamoussoukro"
+  },
+  {
+    "countryNameFr": "Népal",
+    "countryNameEn": "Nepal",
+    "population": 29912000,
+    "capitalFr": "Katmandou",
+    "capitalEn": "Kathmandu"
+  },
+  {
+    "countryNameFr": "Cameroun",
+    "countryNameEn": "Cameroon",
+    "population": 29442000,
+    "capitalFr": "Yaoundé",
+    "capitalEn": "Yaoundé"
+  },
+  {
+    "countryNameFr": "Venezuela",
+    "countryNameEn": "Venezuela",
+    "population": 28517000,
+    "capitalFr": "Caracas",
+    "capitalEn": "Caracas"
+  },
+  {
+    "countryNameFr": "Australie",
+    "countryNameEn": "Australia",
+    "population": 27537000,
+    "capitalFr": "Canberra",
+    "capitalEn": "Canberra"
+  },
+  {
+    "countryNameFr": "Niger",
+    "countryNameEn": "Niger",
+    "population": 26312000,
+    "capitalFr": "Niamey",
+    "capitalEn": "Niamey"
+  },
+  {
+    "countryNameFr": "Corée du Nord",
+    "countryNameEn": "North Korea",
+    "population": 25950000,
+    "capitalFr": "Pyongyang",
+    "capitalEn": "Pyongyang"
+  },
+  {
+    "countryNameFr": "Syrie",
+    "countryNameEn": "Syria",
+    "population": 25620000,
+    "capitalFr": "Damas",
+    "capitalEn": "Damascus"
+  },
+  {
+    "countryNameFr": "Burkina Faso",
+    "countryNameEn": "Burkina Faso",
+    "population": 24071000,
+    "capitalFr": "Ouagadougou",
+    "capitalEn": "Ouagadougou"
+  },
+  {
+    "countryNameFr": "Mali",
+    "countryNameEn": "Mali",
+    "population": 22395000,
+    "capitalFr": "Bamako",
+    "capitalEn": "Bamako"
+  },
+  {
+    "countryNameFr": "Sri Lanka",
+    "countryNameEn": "Sri Lanka",
+    "population": 21763000,
+    "capitalFr": "Colombo",
+    "capitalEn": "Colombo"
+  },
+  {
+    "countryNameFr": "Malawi",
+    "countryNameEn": "Malawi",
+    "population": 20734000,
+    "capitalFr": "Lilongwe",
+    "capitalEn": "Lilongwe"
+  },
+  {
+    "countryNameFr": "Kazakhstan",
+    "countryNameEn": "Kazakhstan",
+    "population": 20427000,
+    "capitalFr": "Astana",
+    "capitalEn": "Astana"
+  },
+  {
+    "countryNameFr": "Chili",
+    "countryNameEn": "Chile",
+    "population": 20207000,
+    "capitalFr": "Santiago",
+    "capitalEn": "Santiago"
+  },
+  {
+    "countryNameFr": "Zambie",
+    "countryNameEn": "Zambia",
+    "population": 19693000,
+    "capitalFr": "Lusaka",
+    "capitalEn": "Lusaka"
+  },
+  {
+    "countryNameFr": "Somalie",
+    "countryNameEn": "Somalia",
+    "population": 19655000,
+    "capitalFr": "Mogadiscio",
+    "capitalEn": "Mogadishu"
+  },
+  {
+    "countryNameFr": "Tchad",
+    "countryNameEn": "Chad",
+    "population": 19341000,
+    "capitalFr": "N'Djaména",
+    "capitalEn": "N'Djamena"
+  },
+  {
+    "countryNameFr": "Roumanie",
+    "countryNameEn": "Romania",
+    "population": 19036000,
+    "capitalFr": "Bucarest",
+    "capitalEn": "Bucharest"
+  },
+  {
+    "countryNameFr": "Sénégal",
+    "countryNameEn": "Senegal",
+    "population": 18593000,
+    "capitalFr": "Dakar",
+    "capitalEn": "Dakar"
+  },
+  {
+    "countryNameFr": "Équateur",
+    "countryNameEn": "Ecuador",
+    "population": 18104000,
+    "capitalFr": "Quito",
+    "capitalEn": "Quito"
+  },
+  {
+    "countryNameFr": "Pays-Bas",
+    "countryNameEn": "Netherlands",
+    "population": 18100000,
+    "capitalFr": "Amsterdam",
+    "capitalEn": "Amsterdam"
+  },
+  {
+    "countryNameFr": "Guatemala",
+    "countryNameEn": "Guatemala",
+    "population": 18080000,
+    "capitalFr": "Guatemala",
+    "capitalEn": "Guatemala City"
+  },
+  {
+    "countryNameFr": "Cambodge",
+    "countryNameEn": "Cambodia",
+    "population": 17578000,
+    "capitalFr": "Phnom Penh",
+    "capitalEn": "Phnom Penh"
+  },
+  {
+    "countryNameFr": "Zimbabwe",
+    "countryNameEn": "Zimbabwe",
+    "population": 17073000,
+    "capitalFr": "Harare",
+    "capitalEn": "Harare"
+  },
+  {
+    "countryNameFr": "Soudan du Sud",
+    "countryNameEn": "South Sudan",
+    "population": 15787000,
+    "capitalFr": "Djouba",
+    "capitalEn": "Juba"
+  },
+  {
+    "countryNameFr": "Guinée",
+    "countryNameEn": "Guinea",
+    "population": 14364000,
+    "capitalFr": "Conakry",
+    "capitalEn": "Conakry"
+  },
+  {
+    "countryNameFr": "Rwanda",
+    "countryNameEn": "Rwanda",
+    "population": 14105000,
+    "capitalFr": "Kigali",
+    "capitalEn": "Kigali"
+  },
+  {
+    "countryNameFr": "Bénin",
+    "countryNameEn": "Benin",
+    "population": 13225000,
+    "capitalFr": "Porto-Novo",
+    "capitalEn": "Porto-Novo"
+  },
+  {
+    "countryNameFr": "Burundi",
+    "countryNameEn": "Burundi",
+    "population": 12333000,
+    "capitalFr": "Gitega",
+    "capitalEn": "Gitega"
+  },
+  {
+    "countryNameFr": "Tunisie",
+    "countryNameEn": "Tunisia",
+    "population": 11972000,
+    "capitalFr": "Tunis",
+    "capitalEn": "Tunis"
+  },
+  {
+    "countryNameFr": "Haïti",
+    "countryNameEn": "Haiti",
+    "population": 11867000,
+    "capitalFr": "Port-au-Prince",
+    "capitalEn": "Port-au-Prince"
+  },
+  {
+    "countryNameFr": "Belgique",
+    "countryNameEn": "Belgium",
+    "population": 11826000,
+    "capitalFr": "Bruxelles",
+    "capitalEn": "Brussels"
+  },
+  {
+    "countryNameFr": "Papouasie-Nouvelle-Guinée",
+    "countryNameEn": "Papua New Guinea",
+    "population": 11782000,
+    "capitalFr": "Port Moresby",
+    "capitalEn": "Port Moresby"
+  },
+  {
+    "countryNameFr": "Jordanie",
+    "countryNameEn": "Jordan",
+    "population": 11734000,
+    "capitalFr": "Amman",
+    "capitalEn": "Amman"
+  },
+  {
+    "countryNameFr": "Bolivie",
+    "countryNameEn": "Bolivia",
+    "population": 11365000,
+    "capitalFr": "Sucre",
+    "capitalEn": "Sucre"
+  },
+  {
+    "countryNameFr": "Émirats arabes unis",
+    "countryNameEn": "United Arab Emirates",
+    "population": 11294000,
+    "capitalFr": "Abou Dabi",
+    "capitalEn": "Abu Dhabi"
+  },
+  {
+    "countryNameFr": "Tchéquie",
+    "countryNameEn": "Czechia",
+    "population": 10882000,
+    "capitalFr": "Prague",
+    "capitalEn": "Prague"
+  },
+  {
+    "countryNameFr": "République dominicaine",
+    "countryNameEn": "Dominican Republic",
+    "population": 10772000,
+    "capitalFr": "Saint-Domingue",
+    "capitalEn": "Santo Domingo"
+  },
+  {
+    "countryNameFr": "Portugal",
+    "countryNameEn": "Portugal",
+    "population": 10750000,
+    "capitalFr": "Lisbonne",
+    "capitalEn": "Lisbon"
+  },
+  {
+    "countryNameFr": "Suède",
+    "countryNameEn": "Sweden",
+    "population": 10605000,
+    "capitalFr": "Stockholm",
+    "capitalEn": "Stockholm"
+  },
+  {
+    "countryNameFr": "Tadjikistan",
+    "countryNameEn": "Tajikistan",
+    "population": 10499000,
+    "capitalFr": "Douchanbé",
+    "capitalEn": "Dushanbe"
+  },
+  {
+    "countryNameFr": "Grèce",
+    "countryNameEn": "Greece",
+    "population": 10401000,
+    "capitalFr": "Athènes",
+    "capitalEn": "Athens"
+  },
+  {
+    "countryNameFr": "Azerbaïdjan",
+    "countryNameEn": "Azerbaijan",
+    "population": 10242000,
+    "capitalFr": "Bakou",
+    "capitalEn": "Baku"
+  },
+  {
+    "countryNameFr": "Israël",
+    "countryNameEn": "Israel",
+    "population": 10135000,
+    "capitalFr": "Jérusalem",
+    "capitalEn": "Jerusalem"
+  },
+  {
+    "countryNameFr": "Honduras",
+    "countryNameEn": "Honduras",
+    "population": 9893000,
+    "capitalFr": "Tegucigalpa",
+    "capitalEn": "Tegucigalpa"
+  },
+  {
+    "countryNameFr": "Cuba",
+    "countryNameEn": "Cuba",
+    "population": 9748000,
+    "capitalFr": "La Havane",
+    "capitalEn": "Havana"
+  },
+  {
+    "countryNameFr": "Hongrie",
+    "countryNameEn": "Hungary",
+    "population": 9540000,
+    "capitalFr": "Budapest",
+    "capitalEn": "Budapest"
+  },
+  {
+    "countryNameFr": "Autriche",
+    "countryNameEn": "Austria",
+    "population": 9201000,
+    "capitalFr": "Vienne",
+    "capitalEn": "Vienna"
+  },
+  {
+    "countryNameFr": "Biélorussie",
+    "countryNameEn": "Belarus",
+    "population": 9109000,
+    "capitalFr": "Minsk",
+    "capitalEn": "Minsk"
+  },
+  {
+    "countryNameFr": "Suisse",
+    "countryNameEn": "Switzerland",
+    "population": 9083000,
+    "capitalFr": "Berne",
+    "capitalEn": "Bern"
+  },
+  {
+    "countryNameFr": "Sierra Leone",
+    "countryNameEn": "Sierra Leone",
+    "population": 9078000,
+    "capitalFr": "Freetown",
+    "capitalEn": "Freetown"
+  },
+  {
+    "countryNameFr": "Togo",
+    "countryNameEn": "Togo",
+    "population": 8095000,
+    "capitalFr": "Lomé",
+    "capitalEn": "Lomé"
+  },
+  {
+    "countryNameFr": "Laos",
+    "countryNameEn": "Laos",
+    "population": 7647000,
+    "capitalFr": "Vientiane",
+    "capitalEn": "Vientiane"
+  },
+  {
+    "countryNameFr": "Libye",
+    "countryNameEn": "Libya",
+    "population": 7459000,
+    "capitalFr": "Tripoli",
+    "capitalEn": "Tripoli"
+  },
+  {
+    "countryNameFr": "Kirghizistan",
+    "countryNameEn": "Kyrgyzstan",
+    "population": 7282000,
+    "capitalFr": "Bichkek",
+    "capitalEn": "Bishkek"
+  },
+  {
+    "countryNameFr": "Turkménistan",
+    "countryNameEn": "Turkmenistan",
+    "population": 7058000,
+    "capitalFr": "Achgabat",
+    "capitalEn": "Ashgabat"
+  },
+  {
+    "countryNameFr": "Nicaragua",
+    "countryNameEn": "Nicaragua",
+    "population": 6804000,
+    "capitalFr": "Managua",
+    "capitalEn": "Managua"
+  },
+  {
+    "countryNameFr": "Serbie",
+    "countryNameEn": "Serbia",
+    "population": 6568000,
+    "capitalFr": "Belgrade",
+    "capitalEn": "Belgrade"
+  },
+  {
+    "countryNameFr": "République centrafricaine",
+    "countryNameEn": "Central African Republic",
+    "population": 6470000,
+    "capitalFr": "Bangui",
+    "capitalEn": "Bangui"
+  },
+  {
+    "countryNameFr": "Bulgarie",
+    "countryNameEn": "Bulgaria",
+    "population": 6437000,
+    "capitalFr": "Sofia",
+    "capitalEn": "Sofia"
+  },
+  {
+    "countryNameFr": "Congo",
+    "countryNameEn": "Republic of the Congo",
+    "population": 6142000,
+    "capitalFr": "Brazzaville",
+    "capitalEn": "Brazzaville"
+  },
+  {
+    "countryNameFr": "Paraguay",
+    "countryNameEn": "Paraguay",
+    "population": 6110000,
+    "capitalFr": "Asuncion",
+    "capitalEn": "Asunción"
+  },
+  {
+    "countryNameFr": "Singapour",
+    "countryNameEn": "Singapore",
+    "population": 6110000,
+    "capitalFr": "Singapour",
+    "capitalEn": "Singapore"
+  },
+  {
+    "countryNameFr": "Salvador",
+    "countryNameEn": "El Salvador",
+    "population": 6030000,
+    "capitalFr": "San Salvador",
+    "capitalEn": "San Salvador"
+  },
+  {
+    "countryNameFr": "Danemark",
+    "countryNameEn": "Denmark",
+    "population": 6011000,
+    "capitalFr": "Copenhague",
+    "capitalEn": "Copenhagen"
+  },
+  {
+    "countryNameFr": "Finlande",
+    "countryNameEn": "Finland",
+    "population": 5650000,
+    "capitalFr": "Helsinki",
+    "capitalEn": "Helsinki"
+  },
+  {
+    "countryNameFr": "Norvège",
+    "countryNameEn": "Norway",
+    "population": 5607000,
+    "capitalFr": "Oslo",
+    "capitalEn": "Oslo"
+  },
+  {
+    "countryNameFr": "Liban",
+    "countryNameEn": "Lebanon",
+    "population": 5490000,
+    "capitalFr": "Beyrouth",
+    "capitalEn": "Beirut"
+  },
+  {
+    "countryNameFr": "Palestine",
+    "countryNameEn": "Palestine",
+    "population": 5483000,
+    "capitalFr": "Ramallah",
+    "capitalEn": "Ramallah"
+  },
+  {
+    "countryNameFr": "Irlande",
+    "countryNameEn": "Ireland",
+    "population": 5459000,
+    "capitalFr": "Dublin",
+    "capitalEn": "Dublin"
+  },
+  {
+    "countryNameFr": "Slovaquie",
+    "countryNameEn": "Slovakia",
+    "population": 5414000,
+    "capitalFr": "Bratislava",
+    "capitalEn": "Bratislava"
+  },
+  {
+    "countryNameFr": "Oman",
+    "countryNameEn": "Oman",
+    "population": 5344000,
+    "capitalFr": "Mascate",
+    "capitalEn": "Muscat"
+  },
+  {
+    "countryNameFr": "Nouvelle-Zélande",
+    "countryNameEn": "New Zealand",
+    "population": 5325000,
+    "capitalFr": "Wellington",
+    "capitalEn": "Wellington"
+  },
+  {
+    "countryNameFr": "Costa Rica",
+    "countryNameEn": "Costa Rica",
+    "population": 5310000,
+    "capitalFr": "San José",
+    "capitalEn": "San José"
+  },
+  {
+    "countryNameFr": "Liberia",
+    "countryNameEn": "Liberia",
+    "population": 5249000,
+    "capitalFr": "Monrovia",
+    "capitalEn": "Monrovia"
+  },
+  {
+    "countryNameFr": "Mauritanie",
+    "countryNameEn": "Mauritania",
+    "population": 4928000,
+    "capitalFr": "Nouakchott",
+    "capitalEn": "Nouakchott"
+  },
+  {
+    "countryNameFr": "Koweït",
+    "countryNameEn": "Kuwait",
+    "population": 4881000,
+    "capitalFr": "Koweït",
+    "capitalEn": "Kuwait City"
+  },
+  {
+    "countryNameFr": "Panama",
+    "countryNameEn": "Panama",
+    "population": 4065000,
+    "capitalFr": "Panama",
+    "capitalEn": "Panama City"
+  },
+  {
+    "countryNameFr": "Géorgie",
+    "countryNameEn": "Georgia",
+    "population": 4001000,
+    "capitalFr": "Tbilissi",
+    "capitalEn": "Tbilisi"
+  },
+  {
+    "countryNameFr": "Croatie",
+    "countryNameEn": "Croatia",
+    "population": 3866000,
+    "capitalFr": "Zagreb",
+    "capitalEn": "Zagreb"
+  },
+  {
+    "countryNameFr": "Érythrée",
+    "countryNameEn": "Eritrea",
+    "population": 3607000,
+    "capitalFr": "Asmara",
+    "capitalEn": "Asmara"
+  },
+  {
+    "countryNameFr": "Mongolie",
+    "countryNameEn": "Mongolia",
+    "population": 3545000,
+    "capitalFr": "Oulan-Bator",
+    "capitalEn": "Ulaanbaatar"
+  },
+  {
+    "countryNameFr": "Uruguay",
+    "countryNameEn": "Uruguay",
+    "population": 3499000,
+    "capitalFr": "Montevideo",
+    "capitalEn": "Montevideo"
+  },
+  {
+    "countryNameFr": "Bosnie-Herzégovine",
+    "countryNameEn": "Bosnia and Herzegovina",
+    "population": 3422000,
+    "capitalFr": "Sarajevo",
+    "capitalEn": "Sarajevo"
+  },
+  {
+    "countryNameFr": "Qatar",
+    "countryNameEn": "Qatar",
+    "population": 3173000,
+    "capitalFr": "Doha",
+    "capitalEn": "Doha"
+  },
+  {
+    "countryNameFr": "Arménie",
+    "countryNameEn": "Armenia",
+    "population": 3076000,
+    "capitalFr": "Erevan",
+    "capitalEn": "Yerevan"
+  },
+  {
+    "countryNameFr": "Namibie",
+    "countryNameEn": "Namibia",
+    "population": 3022000,
+    "capitalFr": "Windhoek",
+    "capitalEn": "Windhoek"
+  },
+  {
+    "countryNameFr": "Lituanie",
+    "countryNameEn": "Lithuania",
+    "population": 2895000,
+    "capitalFr": "Vilnius",
+    "capitalEn": "Vilnius"
+  },
+  {
+    "countryNameFr": "Jamaïque",
+    "countryNameEn": "Jamaica",
+    "population": 2826000,
+    "capitalFr": "Kingston",
+    "capitalEn": "Kingston"
+  },
+  {
+    "countryNameFr": "Moldavie",
+    "countryNameEn": "Moldova",
+    "population": 2749000,
+    "capitalFr": "Chișinău",
+    "capitalEn": "Chișinău"
+  },
+  {
+    "countryNameFr": "Gabon",
+    "countryNameEn": "Gabon",
+    "population": 2469000,
+    "capitalFr": "Libreville",
+    "capitalEn": "Libreville"
+  },
+  {
+    "countryNameFr": "Gambie",
+    "countryNameEn": "Gambia",
+    "population": 2423000,
+    "capitalFr": "Banjul",
+    "capitalEn": "Banjul"
+  },
+  {
+    "countryNameFr": "Albanie",
+    "countryNameEn": "Albania",
+    "population": 2363000,
+    "capitalFr": "Tirana",
+    "capitalEn": "Tirana"
+  },
+  {
+    "countryNameFr": "Botswana",
+    "countryNameEn": "Botswana",
+    "population": 2360000,
+    "capitalFr": "Gaborone",
+    "capitalEn": "Gaborone"
+  },
+  {
+    "countryNameFr": "Slovénie",
+    "countryNameEn": "Slovenia",
+    "population": 2131000,
+    "capitalFr": "Ljubljana",
+    "capitalEn": "Ljubljana"
+  },
+  {
+    "countryNameFr": "Lesotho",
+    "countryNameEn": "Lesotho",
+    "population": 2116000,
+    "capitalFr": "Maseru",
+    "capitalEn": "Maseru"
+  },
+  {
+    "countryNameFr": "Lettonie",
+    "countryNameEn": "Latvia",
+    "population": 1829000,
+    "capitalFr": "Riga",
+    "capitalEn": "Riga"
+  },
+  {
+    "countryNameFr": "Macédoine du Nord",
+    "countryNameEn": "North Macedonia",
+    "population": 1823000,
+    "capitalFr": "Skopje",
+    "capitalEn": "Skopje"
+  },
+  {
+    "countryNameFr": "Guinée-Bissau",
+    "countryNameEn": "Guinea-Bissau",
+    "population": 1781000,
+    "capitalFr": "Bissau",
+    "capitalEn": "Bissau"
+  },
+  {
+    "countryNameFr": "Guinée équatoriale",
+    "countryNameEn": "Equatorial Guinea",
+    "population": 1669000,
+    "capitalFr": "Ciudad de la Paz",
+    "capitalEn": "Ciudad de la Paz"
+  },
+  {
+    "countryNameFr": "Bahreïn",
+    "countryNameEn": "Bahrain",
+    "population": 1595000,
+    "capitalFr": "Manama",
+    "capitalEn": "Manama"
+  },
+  {
+    "countryNameFr": "Kosovo",
+    "countryNameEn": "Kosovo",
+    "population": 1586000,
+    "capitalFr": "Pristina",
+    "capitalEn": "Pristina"
+  },
+  {
+    "countryNameFr": "Chypre",
+    "countryNameEn": "Cyprus",
+    "population": 1443000,
+    "capitalFr": "Nicosie",
+    "capitalEn": "Nicosia"
+  },
+  {
+    "countryNameFr": "Timor oriental",
+    "countryNameEn": "Timor-Leste",
+    "population": 1391000,
+    "capitalFr": "Dili",
+    "capitalEn": "Dili"
+  },
+  {
+    "countryNameFr": "Estonie",
+    "countryNameEn": "Estonia",
+    "population": 1370000,
+    "capitalFr": "Tallinn",
+    "capitalEn": "Tallinn"
+  },
+  {
+    "countryNameFr": "Trinité-et-Tobago",
+    "countryNameEn": "Trinidad and Tobago",
+    "population": 1368000,
+    "capitalFr": "Port-d'Espagne",
+    "capitalEn": "Port of Spain"
+  },
+  {
+    "countryNameFr": "Île Maurice",
+    "countryNameEn": "Mauritius",
+    "population": 1244000,
+    "capitalFr": "Port-Louis",
+    "capitalEn": "Port Louis"
+  },
+  {
+    "countryNameFr": "Swaziland",
+    "countryNameEn": "Eswatini",
+    "population": 1236000,
+    "capitalFr": "Lobamba",
+    "capitalEn": "Lobamba"
+  },
+  {
+    "countryNameFr": "Djibouti",
+    "countryNameEn": "Djibouti",
+    "population": 1067000,
+    "capitalFr": "Djibouti",
+    "capitalEn": "Djibouti"
+  },
+  {
+    "countryNameFr": "Comores",
+    "countryNameEn": "Comoros",
+    "population": 920000,
+    "capitalFr": "Moroni",
+    "capitalEn": "Moroni"
+  },
+  {
+    "countryNameFr": "Fidji",
+    "countryNameEn": "Fiji",
+    "population": 901000,
+    "capitalFr": "Suva",
+    "capitalEn": "Suva"
+  },
+  {
+    "countryNameFr": "Bhoutan",
+    "countryNameEn": "Bhutan",
+    "population": 784000,
+    "capitalFr": "Thimphou",
+    "capitalEn": "Thimphu"
+  },
+  {
+    "countryNameFr": "Guyana",
+    "countryNameEn": "Guyana",
+    "population": 773000,
+    "capitalFr": "Georgetown",
+    "capitalEn": "Georgetown"
+  },
+  {
+    "countryNameFr": "Îles Salomon",
+    "countryNameEn": "Solomon Islands",
+    "population": 750000,
+    "capitalFr": "Honiara",
+    "capitalEn": "Honiara"
+  },
+  {
+    "countryNameFr": "Luxembourg",
+    "countryNameEn": "Luxembourg",
+    "population": 682000,
+    "capitalFr": "Luxembourg",
+    "capitalEn": "Luxembourg"
+  },
+  {
+    "countryNameFr": "Monténégro",
+    "countryNameEn": "Montenegro",
+    "population": 623000,
+    "capitalFr": "Cetinje",
+    "capitalEn": "Cetinje"
+  },
+  {
+    "countryNameFr": "Surinam",
+    "countryNameEn": "Suriname",
+    "population": 617000,
+    "capitalFr": "Paramaribo",
+    "capitalEn": "Paramaribo"
+  },
+  {
+    "countryNameFr": "Malte",
+    "countryNameEn": "Malta",
+    "population": 574000,
+    "capitalFr": "La Valette",
+    "capitalEn": "Valletta"
+  },
+  {
+    "countryNameFr": "Maldives",
+    "countryNameEn": "Maldives",
+    "population": 515000,
+    "capitalFr": "Malé",
+    "capitalEn": "Malé"
+  },
+  {
+    "countryNameFr": "Îles du Cap-Vert",
+    "countryNameEn": "Cape Verde",
+    "population": 491000,
+    "capitalFr": "Praia",
+    "capitalEn": "Praia"
+  },
+  {
+    "countryNameFr": "Brunei",
+    "countryNameEn": "Brunei",
+    "population": 456000,
+    "capitalFr": "Bandar Seri Begawan",
+    "capitalEn": "Bandar Seri Begawan"
+  },
+  {
+    "countryNameFr": "Belize",
+    "countryNameEn": "Belize",
+    "population": 418000,
+    "capitalFr": "Belmopan",
+    "capitalEn": "Belmopan"
+  },
+  {
+    "countryNameFr": "Bahamas",
+    "countryNameEn": "Bahamas",
+    "population": 398000,
+    "capitalFr": "Nassau",
+    "capitalEn": "Nassau"
+  },
+  {
+    "countryNameFr": "Islande",
+    "countryNameEn": "Iceland",
+    "population": 392000,
+    "capitalFr": "Reykjavik",
+    "capitalEn": "Reykjavík"
+  },
+  {
+    "countryNameFr": "Vanuatu",
+    "countryNameEn": "Vanuatu",
+    "population": 321000,
+    "capitalFr": "Port-Vila",
+    "capitalEn": "Port Vila"
+  },
+  {
+    "countryNameFr": "Barbade",
+    "countryNameEn": "Barbados",
+    "population": 268000,
+    "capitalFr": "Bridgetown",
+    "capitalEn": "Bridgetown"
+  },
+  {
+    "countryNameFr": "São Tomé et Príncipe",
+    "countryNameEn": "São Tomé and Príncipe",
+    "population": 210000,
+    "capitalFr": "São Tomé",
+    "capitalEn": "São Tomé"
+  },
+  {
+    "countryNameFr": "Samoa",
+    "countryNameEn": "Samoa",
+    "population": 206000,
+    "capitalFr": "Apia",
+    "capitalEn": "Apia"
+  },
+  {
+    "countryNameFr": "Sainte-Lucie",
+    "countryNameEn": "Saint Lucia",
+    "population": 184000,
+    "capitalFr": "Castries",
+    "capitalEn": "Castries"
+  },
+  {
+    "countryNameFr": "Seychelles",
+    "countryNameEn": "Seychelles",
+    "population": 123000,
+    "capitalFr": "Victoria",
+    "capitalEn": "Victoria"
+  },
+  {
+    "countryNameFr": "Kiribati",
+    "countryNameEn": "Kiribati",
+    "population": 121000,
+    "capitalFr": "Tarawa-Sud",
+    "capitalEn": "South Tarawa"
+  },
+  {
+    "countryNameFr": "Saint-Vincent-et-les-Grenadines",
+    "countryNameEn": "Saint Vincent and the Grenadines",
+    "population": 111000,
+    "capitalFr": "Kingstown",
+    "capitalEn": "Kingstown"
+  },
+  {
+    "countryNameFr": "Grenade",
+    "countryNameEn": "Grenada",
+    "population": 109000,
+    "capitalFr": "Saint-Georges",
+    "capitalEn": "St. George's"
+  },
+  {
+    "countryNameFr": "Micronésie",
+    "countryNameEn": "Micronesia",
+    "population": 106000,
+    "capitalFr": "Palikir",
+    "capitalEn": "Palikir"
+  },
+  {
+    "countryNameFr": "Antigua-et-Barbuda",
+    "countryNameEn": "Antigua and Barbuda",
+    "population": 104000,
+    "capitalFr": "Saint John's",
+    "capitalEn": "St. John's"
+  },
+  {
+    "countryNameFr": "Tonga",
+    "countryNameEn": "Tonga",
+    "population": 100000,
+    "capitalFr": "Nukuʻalofa",
+    "capitalEn": "Nukuʻalofa"
+  },
+  {
+    "countryNameFr": "Andorre",
+    "countryNameEn": "Andorra",
+    "population": 88000,
+    "capitalFr": "Andorre-la-Vieille",
+    "capitalEn": "Andorra la Vella"
+  },
+  {
+    "countryNameFr": "Dominique",
+    "countryNameEn": "Dominica",
+    "population": 67000,
+    "capitalFr": "Roseau",
+    "capitalEn": "Roseau"
+  },
+  {
+    "countryNameFr": "Saint-Christophe-et-Niévès",
+    "countryNameEn": "Saint Kitts and Nevis",
+    "population": 51000,
+    "capitalFr": "Basseterre",
+    "capitalEn": "Basseterre"
+  },
+  {
+    "countryNameFr": "Îles Marshall",
+    "countryNameEn": "Marshall Islands",
+    "population": 42000,
+    "capitalFr": "Majuro",
+    "capitalEn": "Majuro"
+  },
+  {
+    "countryNameFr": "Liechtenstein",
+    "countryNameEn": "Liechtenstein",
+    "population": 41000,
+    "capitalFr": "Vaduz",
+    "capitalEn": "Vaduz"
+  },
+  {
+    "countryNameFr": "Monaco",
+    "countryNameEn": "Monaco",
+    "population": 38000,
+    "capitalFr": "Monaco-Ville",
+    "capitalEn": "Monaco City"
+  },
+  {
+    "countryNameFr": "Saint-Marin",
+    "countryNameEn": "San Marino",
+    "population": 34000,
+    "capitalFr": "Saint-Marin",
+    "capitalEn": "San Marino"
+  },
+  {
+    "countryNameFr": "Palaos (Palau)",
+    "countryNameEn": "Palau",
+    "population": 17000,
+    "capitalFr": "Ngerulmud",
+    "capitalEn": "Ngerulmud"
+  },
+  {
+    "countryNameFr": "Nauru",
+    "countryNameEn": "Nauru",
+    "population": 12000,
+    "capitalFr": "Yaren",
+    "capitalEn": "Yaren District"
+  },
+  {
+    "countryNameFr": "Tuvalu",
+    "countryNameEn": "Tuvalu",
+    "population": 11000,
+    "capitalFr": "Funafuti",
+    "capitalEn": "Funafuti"
+  },
+  {
+    "countryNameFr": "Cité du Vatican",
+    "countryNameEn": "Vatican City",
+    "population": 1000,
+    "capitalFr": "Vatican City",
+    "capitalEn": "Vatican City"
+  }
+]

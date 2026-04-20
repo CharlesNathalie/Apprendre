@@ -5,6 +5,7 @@
     <TargetFramework>net10.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <GenerateResourceNever>true</GenerateResourceNever>
     <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
@@ -28,7 +29,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Helpers\CompteHistoire.cs">
+    <Compile Update="Helpers\PaysPopulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Helpers\CompteEtHistoire.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Helpers\WriteAnything.cs">

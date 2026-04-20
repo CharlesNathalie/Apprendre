@@ -156,7 +156,7 @@
         private void ClearDynamicLearningControls()
         {
             Control?[] staticControls = [lblApprendre, lblLearn, 
-                comboBoxApprendre, panelGoogleTranslate, panelImageSearch, 
+                comboBoxApprendre, panelImageSearch, 
                 WebView2ImageSearch, checkBoxGetDataImage, WebView21, checkBoxAfficherImage,
                 btnOptions, btnLanguage,panelOptions
 

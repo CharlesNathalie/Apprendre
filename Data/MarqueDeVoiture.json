@@ -1,0 +1,727 @@
+[
+  {
+    "fr": "La Buick Envision",
+    "en": "The Buick Envision",
+    "url": ""
+  },
+  {
+    "fr": "La Ford Escape",
+    "en": "The Ford Escape",
+    "url": ""
+  },
+  {
+    "fr": "La Honda CR-V",
+    "en": "The Honda CR-V",
+    "url": ""
+  },
+  {
+    "fr": "La Toyota RAV4",
+    "en": "The Toyota RAV4",
+    "url": ""
+  },
+  {
+    "fr": "La Nissan Rogue",
+    "en": "The Nissan Rogue",
+    "url": ""
+  },
+  {
+    "fr": "La Chevrolet Equinox",
+    "en": "The Chevrolet Equinox",
+    "url": ""
+  },
+  {
+    "fr": "La Hyundai Tucson",
+    "en": "The Hyundai Tucson",
+    "url": ""
+  },
+  {
+    "fr": "La Kia Sportage",
+    "en": "The Kia Sportage",
+    "url": ""
+  },
+  {
+    "fr": "La Mazda CX-5",
+    "en": "The Mazda CX-5",
+    "url": ""
+  },
+  {
+    "fr": "La Subaru Forester",
+    "en": "The Subaru Forester",
+    "url": ""
+  },
+  {
+    "fr": "La Volkswagen Tiguan",
+    "en": "The Volkswagen Tiguan",
+    "url": ""
+  },
+  {
+    "fr": "La Jeep Cherokee",
+    "en": "The Jeep Cherokee",
+    "url": ""
+  },
+  {
+    "fr": "La GMC Terrain",
+    "en": "The GMC Terrain",
+    "url": ""
+  },
+  {
+    "fr": "La Mitsubishi Outlander",
+    "en": "The Mitsubishi Outlander",
+    "url": ""
+  },
+  {
+    "fr": "La Volvo XC60",
+    "en": "The Volvo XC60",
+    "url": ""
+  },
+  {
+    "fr": "La Lexus RX",
+    "en": "The Lexus RX",
+    "url": ""
+  },
+  {
+    "fr": "La BMW X3",
+    "en": "The BMW X3",
+    "url": ""
+  },
+  {
+    "fr": "La Mercedes-Benz GLC",
+    "en": "The Mercedes-Benz GLC",
+    "url": ""
+  },
+  {
+    "fr": "L'Audi Q5",
+    "en": "The Audi Q5",
+    "url": ""
+  },
+  {
+    "fr": "La Cadillac XT5",
+    "en": "The Cadillac XT5",
+    "url": ""
+  },
+  {
+    "fr": "La Lincoln Corsair",
+    "en": "The Lincoln Corsair",
+    "url": ""
+  },
+  {
+    "fr": "L'Acura RDX",
+    "en": "The Acura RDX",
+    "url": ""
+  },
+  {
+    "fr": "L'Infiniti QX50",
+    "en": "The Infiniti QX50",
+    "url": ""
+  },
+  {
+    "fr": "La Porsche Macan",
+    "en": "The Porsche Macan",
+    "url": ""
+  },
+  {
+    "fr": "La Land Rover Discovery Sport",
+    "en": "The Land Rover Discovery Sport",
+    "url": ""
+  },
+  {
+    "fr": "La Tesla Model Y",
+    "en": "The Tesla Model Y",
+    "url": ""
+  },
+  {
+    "fr": "La Tesla Model 3",
+    "en": "The Tesla Model 3",
+    "url": ""
+  },
+  {
+    "fr": "La Hyundai Santa Fe",
+    "en": "The Hyundai Santa Fe",
+    "url": ""
+  },
+  {
+    "fr": "La Kia Sorento",
+    "en": "The Kia Sorento",
+    "url": ""
+  },
+  {
+    "fr": "La Toyota Highlander",
+    "en": "The Toyota Highlander",
+    "url": ""
+  },
+  {
+    "fr": "La Honda Pilot",
+    "en": "The Honda Pilot",
+    "url": ""
+  },
+  {
+    "fr": "La Ford Explorer",
+    "en": "The Ford Explorer",
+    "url": ""
+  },
+  {
+    "fr": "La Chevrolet Traverse",
+    "en": "The Chevrolet Traverse",
+    "url": ""
+  },
+  {
+    "fr": "La GMC Acadia",
+    "en": "The GMC Acadia",
+    "url": ""
+  },
+  {
+    "fr": "La Subaru Outback",
+    "en": "The Subaru Outback",
+    "url": ""
+  },
+  {
+    "fr": "La Mazda CX-50",
+    "en": "The Mazda CX-50",
+    "url": ""
+  },
+  {
+    "fr": "La Volkswagen Atlas",
+    "en": "The Volkswagen Atlas",
+    "url": ""
+  },
+  {
+    "fr": "La Nissan Pathfinder",
+    "en": "The Nissan Pathfinder",
+    "url": ""
+  },
+  {
+    "fr": "La Jeep Grand Cherokee",
+    "en": "The Jeep Grand Cherokee",
+    "url": ""
+  },
+  {
+    "fr": "La Dodge Durango",
+    "en": "The Dodge Durango",
+    "url": ""
+  },
+  {
+    "fr": "La Chevrolet Tahoe",
+    "en": "The Chevrolet Tahoe",
+    "url": ""
+  },
+  {
+    "fr": "La Cadillac Escalade",
+    "en": "The Cadillac Escalade",
+    "url": ""
+  },
+  {
+    "fr": "La BMW X5",
+    "en": "The BMW X5",
+    "url": ""
+  },
+  {
+    "fr": "La Mercedes-Benz GLE",
+    "en": "The Mercedes-Benz GLE",
+    "url": ""
+  },
+  {
+    "fr": "L'Audi Q7",
+    "en": "The Audi Q7",
+    "url": ""
+  },
+  {
+    "fr": "La Toyota Camry",
+    "en": "The Toyota Camry",
+    "url": ""
+  },
+  {
+    "fr": "La Honda Civic",
+    "en": "The Honda Civic",
+    "url": ""
+  },
+  {
+    "fr": "La Toyota Corolla",
+    "en": "The Toyota Corolla",
+    "url": ""
+  },
+  {
+    "fr": "La Hyundai Elantra",
+    "en": "The Hyundai Elantra",
+    "url": ""
+  },
+  {
+    "fr": "La Mazda3",
+    "en": "The Mazda3",
+    "url": ""
+  },
+  {
+    "fr": "La Nissan Sentra",
+    "en": "The Nissan Sentra",
+    "url": ""
+  },
+  {
+    "fr": "La Volkswagen Jetta",
+    "en": "The Volkswagen Jetta",
+    "url": ""
+  },
+  {
+    "fr": "La Subaru Crosstrek",
+    "en": "The Subaru Crosstrek",
+    "url": ""
+  },
+  {
+    "fr": "La Kia Forte",
+    "en": "The Kia Forte",
+    "url": ""
+  },
+  {
+    "fr": "La Chevrolet Malibu",
+    "en": "The Chevrolet Malibu",
+    "url": ""
+  },
+  {
+    "fr": "La Ford Mustang",
+    "en": "The Ford Mustang",
+    "url": ""
+  },
+  {
+    "fr": "La Dodge Charger",
+    "en": "The Dodge Charger",
+    "url": ""
+  },
+  {
+    "fr": "La Tesla Model S",
+    "en": "The Tesla Model S",
+    "url": ""
+  },
+  {
+    "fr": "La Tesla Model X",
+    "en": "The Tesla Model X",
+    "url": ""
+  },
+  {
+    "fr": "La Ford F-150",
+    "en": "The Ford F-150",
+    "url": ""
+  },
+  {
+    "fr": "La Chevrolet Silverado",
+    "en": "The Chevrolet Silverado",
+    "url": ""
+  },
+  {
+    "fr": "La RAM 1500",
+    "en": "The RAM 1500",
+    "url": ""
+  },
+  {
+    "fr": "La GMC Sierra",
+    "en": "The GMC Sierra",
+    "url": ""
+  },
+  {
+    "fr": "La Toyota Tacoma",
+    "en": "The Toyota Tacoma",
+    "url": ""
+  },
+  {
+    "fr": "La Jeep Wrangler",
+    "en": "The Jeep Wrangler",
+    "url": ""
+  },
+  {
+    "fr": "La Toyota Prius",
+    "en": "The Toyota Prius",
+    "url": ""
+  },
+  {
+    "fr": "La Hyundai Kona",
+    "en": "The Hyundai Kona",
+    "url": ""
+  },
+  {
+    "fr": "La Kia Telluride",
+    "en": "The Kia Telluride",
+    "url": ""
+  },
+  {
+    "fr": "La Honda Accord",
+    "en": "The Honda Accord",
+    "url": ""
+  },
+  {
+    "fr": "La Nissan Altima",
+    "en": "The Nissan Altima",
+    "url": ""
+  },
+  {
+    "fr": "La Subaru Legacy",
+    "en": "The Subaru Legacy",
+    "url": ""
+  },
+  {
+    "fr": "La Mazda CX-90",
+    "en": "The Mazda CX-90",
+    "url": ""
+  },
+  {
+    "fr": "La Volkswagen Golf",
+    "en": "The Volkswagen Golf",
+    "url": ""
+  },
+  {
+    "fr": "La MINI Cooper",
+    "en": "The MINI Cooper",
+    "url": ""
+  },
+  {
+    "fr": "La Porsche Cayenne",
+    "en": "The Porsche Cayenne",
+    "url": ""
+  },
+  {
+    "fr": "La BMW X1",
+    "en": "The BMW X1",
+    "url": ""
+  },
+  {
+    "fr": "La Mercedes-Benz C-Class",
+    "en": "The Mercedes-Benz C-Class",
+    "url": ""
+  },
+  {
+    "fr": "L'Audi A4",
+    "en": "The Audi A4",
+    "url": ""
+  },
+  {
+    "fr": "La Lexus NX",
+    "en": "The Lexus NX",
+    "url": ""
+  },
+  {
+    "fr": "La Volvo XC40",
+    "en": "The Volvo XC40",
+    "url": ""
+  },
+  {
+    "fr": "La Lincoln Nautilus",
+    "en": "The Lincoln Nautilus",
+    "url": ""
+  },
+  {
+    "fr": "L'Acura MDX",
+    "en": "The Acura MDX",
+    "url": ""
+  },
+  {
+    "fr": "L'Infiniti QX60",
+    "en": "The Infiniti QX60",
+    "url": ""
+  },
+  {
+    "fr": "La Buick Encore GX",
+    "en": "The Buick Encore GX",
+    "url": ""
+  },
+  {
+    "fr": "La Chevrolet Blazer",
+    "en": "The Chevrolet Blazer",
+    "url": ""
+  },
+  {
+    "fr": "La Toyota bZ4X",
+    "en": "The Toyota bZ4X",
+    "url": ""
+  },
+  {
+    "fr": "La Hyundai Ioniq 5",
+    "en": "The Hyundai Ioniq 5",
+    "url": ""
+  },
+  {
+    "fr": "La Kia EV6",
+    "en": "The Kia EV6",
+    "url": ""
+  },
+  {
+    "fr": "La Ford Mustang Mach-E",
+    "en": "The Ford Mustang Mach-E",
+    "url": ""
+  },
+  {
+    "fr": "La Chevrolet Equinox EV",
+    "en": "The Chevrolet Equinox EV",
+    "url": ""
+  },
+  {
+    "fr": "La Cadillac Lyriq",
+    "en": "The Cadillac Lyriq",
+    "url": ""
+  },
+  {
+    "fr": "La BMW i4",
+    "en": "The BMW i4",
+    "url": ""
+  },
+  {
+    "fr": "La Mercedes-Benz EQE",
+    "en": "The Mercedes-Benz EQE",
+    "url": ""
+  },
+  {
+    "fr": "L'Audi Q4 e-tron",
+    "en": "The Audi Q4 e-tron",
+    "url": ""
+  },
+  {
+    "fr": "La Volvo EX30",
+    "en": "The Volvo EX30",
+    "url": ""
+  },
+  {
+    "fr": "La Lexus ES",
+    "en": "The Lexus ES",
+    "url": ""
+  },
+  {
+    "fr": "La Nissan Ariya",
+    "en": "The Nissan Ariya",
+    "url": ""
+  },
+  {
+    "fr": "La Subaru Solterra",
+    "en": "The Subaru Solterra",
+    "url": ""
+  },
+  {
+    "fr": "La Mazda MX-5 Miata",
+    "en": "The Mazda MX-5 Miata",
+    "url": ""
+  },
+  {
+    "fr": "La Honda HR-V",
+    "en": "The Honda HR-V",
+    "url": ""
+  },
+  {
+    "fr": "La Toyota Sequoia",
+    "en": "The Toyota Sequoia",
+    "url": ""
+  },
+  {
+    "fr": "La Jeep Compass",
+    "en": "The Jeep Compass",
+    "url": ""
+  },
+  {
+    "fr": "La GMC Yukon",
+    "en": "The GMC Yukon",
+    "url": ""
+  },
+  {
+    "fr": "La Chevrolet Suburban",
+    "en": "The Chevrolet Suburban",
+    "url": ""
+  },
+  {
+    "fr": "La RAM 2500",
+    "en": "The RAM 2500",
+    "url": ""
+  },
+  {
+    "fr": "La Toyota 4Runner",
+    "en": "The Toyota 4Runner",
+    "url": ""
+  },
+  {
+    "fr": "La Honda Odyssey",
+    "en": "The Honda Odyssey",
+    "url": ""
+  },
+  {
+    "fr": "La Toyota Sienna",
+    "en": "The Toyota Sienna",
+    "url": ""
+  },
+  {
+    "fr": "La Chrysler Pacifica",
+    "en": "The Chrysler Pacifica",
+    "url": ""
+  },
+  {
+    "fr": "La Kia Carnival",
+    "en": "The Kia Carnival",
+    "url": ""
+  },
+  {
+    "fr": "La Hyundai Palisade",
+    "en": "The Hyundai Palisade",
+    "url": ""
+  },
+  {
+    "fr": "La Genesis GV70",
+    "en": "The Genesis GV70",
+    "url": ""
+  },
+  {
+    "fr": "La Genesis GV80",
+    "en": "The Genesis GV80",
+    "url": ""
+  },
+  {
+    "fr": "La Rivian R1T",
+    "en": "The Rivian R1T",
+    "url": ""
+  },
+  {
+    "fr": "La Rivian R1S",
+    "en": "The Rivian R1S",
+    "url": ""
+  },
+  {
+    "fr": "La Lucid Air",
+    "en": "The Lucid Air",
+    "url": ""
+  },
+  {
+    "fr": "La Polestar 2",
+    "en": "The Polestar 2",
+    "url": ""
+  },
+  {
+    "fr": "La Chevrolet Corvette",
+    "en": "The Chevrolet Corvette",
+    "url": ""
+  },
+  {
+    "fr": "La Nissan Z",
+    "en": "The Nissan Z",
+    "url": ""
+  },
+  {
+    "fr": "La Subaru BRZ",
+    "en": "The Subaru BRZ",
+    "url": ""
+  },
+  {
+    "fr": "La Toyota GR Supra",
+    "en": "The Toyota GR Supra",
+    "url": ""
+  },
+  {
+    "fr": "La Toyota GR86",
+    "en": "The Toyota GR86",
+    "url": ""
+  },
+  {
+    "fr": "La BMW M3",
+    "en": "The BMW M3",
+    "url": ""
+  },
+  {
+    "fr": "La Mercedes-Benz E-Class",
+    "en": "The Mercedes-Benz E-Class",
+    "url": ""
+  },
+  {
+    "fr": "L'Audi A6",
+    "en": "The Audi A6",
+    "url": ""
+  },
+  {
+    "fr": "La Lexus GX",
+    "en": "The Lexus GX",
+    "url": ""
+  },
+  {
+    "fr": "La Lexus LX",
+    "en": "The Lexus LX",
+    "url": ""
+  },
+  {
+    "fr": "La BMW X7",
+    "en": "The BMW X7",
+    "url": ""
+  },
+  {
+    "fr": "La BMW Série 5",
+    "en": "The BMW 5 Series",
+    "url": ""
+  },
+  {
+    "fr": "La Mercedes-Benz S-Class",
+    "en": "The Mercedes-Benz S-Class",
+    "url": ""
+  },
+  {
+    "fr": "L'Audi Q8",
+    "en": "The Audi Q8",
+    "url": ""
+  },
+  {
+    "fr": "La Porsche 911",
+    "en": "The Porsche 911",
+    "url": ""
+  },
+  {
+    "fr": "La Porsche Taycan",
+    "en": "The Porsche Taycan",
+    "url": ""
+  },
+  {
+    "fr": "La Maserati Grecale",
+    "en": "The Maserati Grecale",
+    "url": ""
+  },
+  {
+    "fr": "L'Alfa Romeo Stelvio",
+    "en": "The Alfa Romeo Stelvio",
+    "url": ""
+  },
+  {
+    "fr": "La Fiat 500e",
+    "en": "The Fiat 500e",
+    "url": ""
+  },
+  {
+    "fr": "La Dodge Hornet",
+    "en": "The Dodge Hornet",
+    "url": ""
+  },
+  {
+    "fr": "La Chrysler 300",
+    "en": "The Chrysler 300",
+    "url": ""
+  },
+  {
+    "fr": "La Buick Envista",
+    "en": "The Buick Envista",
+    "url": ""
+  },
+  {
+    "fr": "La GMC Canyon",
+    "en": "The GMC Canyon",
+    "url": ""
+  },
+  {
+    "fr": "La Chevrolet Colorado",
+    "en": "The Chevrolet Colorado",
+    "url": ""
+  },
+  {
+    "fr": "La Ford Maverick",
+    "en": "The Ford Maverick",
+    "url": ""
+  },
+  {
+    "fr": "La Hyundai Venue",
+    "en": "The Hyundai Venue",
+    "url": ""
+  },
+  {
+    "fr": "La Kia K5",
+    "en": "The Kia K5",
+    "url": ""
+  },
+  {
+    "fr": "La Nissan Murano",
+    "en": "The Nissan Murano",
+    "url": ""
+  }
+]
