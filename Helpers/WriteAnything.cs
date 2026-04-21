@@ -26,14 +26,14 @@ public partial class Apprendre
 
         int contentWidth = Math.Max(760, ClientSize.Width - 100);
         int sectionTop = 70;
-        int inputHeight = 32;
-        int resultHeight = 52;
+        int inputHeight = 36;
+        int resultHeight = 58;
 
         Controls.Add(new Label
         {
             Tag = "fr",
             Text = "Français",
-            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(17, 24, 39),
             Location = new Point(50, sectionTop),
             AutoSize = true
@@ -43,7 +43,7 @@ public partial class Apprendre
         {
             Name = "txtWriteAnythingFrInput",
             Tag = "writeanything-input|fr",
-            Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(31, 41, 55),
             BackColor = Color.White,
             Location = new Point(50, sectionTop + 44),
@@ -58,7 +58,7 @@ public partial class Apprendre
         {
             Tag = "fr",
             Text = "Texte corrigé",
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(55, 65, 81),
             Location = new Point(50, sectionTop + 86),
             AutoSize = true
@@ -69,7 +69,7 @@ public partial class Apprendre
             Name = "lblWriteAnythingFrCorrectionResult",
             Tag = "fr",
             Text = string.Empty,
-            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0),
             Location = new Point(50, sectionTop + 114),
             Size = new Size(contentWidth, resultHeight),
             Padding = new Padding(8)
@@ -79,7 +79,7 @@ public partial class Apprendre
         {
             Tag = "en",
             Text = "English Translation",
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(55, 65, 81),
             Location = new Point(50, sectionTop + 170),
             AutoSize = true
@@ -90,7 +90,7 @@ public partial class Apprendre
             Name = "lblWriteAnythingFrTranslationResult",
             Tag = "en",
             Text = string.Empty,
-            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0),
             Location = new Point(50, sectionTop + 198),
             Size = new Size(contentWidth, resultHeight),
             Padding = new Padding(8)
@@ -102,7 +102,7 @@ public partial class Apprendre
         {
             Tag = "en",
             Text = "English",
-            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0),
             Location = new Point(50, englishSectionTop),
             AutoSize = true
         });
@@ -111,7 +111,7 @@ public partial class Apprendre
         {
             Name = "txtWriteAnythingEnInput",
             Tag = "writeanything-input|en",
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(31, 41, 55),
             BackColor = Color.White,
             BorderStyle = BorderStyle.FixedSingle,
@@ -138,7 +138,7 @@ public partial class Apprendre
             Name = "lblWriteAnythingEnCorrectionResult",
             Tag = "en",
             Text = string.Empty,
-            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(31, 41, 55),
             BackColor = Color.White,
             Location = new Point(50, englishSectionTop + 104),
@@ -150,7 +150,7 @@ public partial class Apprendre
         {
             Tag = "fr",
             Text = "Traduction française",
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(55, 65, 81),
             Location = new Point(50, englishSectionTop + 170),
             AutoSize = true
@@ -161,7 +161,7 @@ public partial class Apprendre
             Name = "lblWriteAnythingEnTranslationResult",
             Tag = "fr",
             Text = string.Empty,
-            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(31, 41, 55),
             BackColor = Color.White,
             Location = new Point(50, englishSectionTop + 198),

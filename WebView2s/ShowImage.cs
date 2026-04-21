@@ -71,8 +71,8 @@ public partial class Apprendre
         string html1 = $"""
                 <!doctype html>
                 <html>
-                <body">
-                    <img src="{dataUrl1}" style="width:100%;height:100%;" />
+                <body style="margin:0;overflow:hidden;">
+                    <img src="{dataUrl1}" style="display:block;width:100%;height:100%;object-fit:contain;object-position:45% center;" />
                 </body>
                 </html>
                 """;
@@ -201,8 +201,8 @@ public partial class Apprendre
             string html1 = $"""
                 <!doctype html>
                 <html>
-                <body>
-                    <img src="{imageUrl}" style="width:100%;height:100%;" />
+                <body style="margin:0;overflow:hidden;">
+                    <img src="{imageUrl}" style="display:block;width:100%;height:100%;object-fit:contain;object-position:45% center;" />
                 </body>
                 </html>
                 """;

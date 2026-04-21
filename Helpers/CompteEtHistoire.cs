@@ -35,7 +35,7 @@ public partial class Apprendre
         {
             Tag = "fr",
             Text = "Âge, Langue, Lecture, Écoute, Nombre de mot, etc. Maximum de 1000 mots pour le moment.",
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(55, 65, 81),
             Location = new Point(50, sectionTop + 10),
             AutoSize = true
@@ -45,7 +45,7 @@ public partial class Apprendre
         {
             Tag = "en",
             Text = "Age, Language, Reading, Listening, Word Count, etc. Maximum of 1000 words for now.",
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(55, 65, 81),
             Location = new Point(50, sectionTop + 40),
             AutoSize = true
@@ -54,12 +54,17 @@ public partial class Apprendre
         RichTextBox promptRichTextBox = new()
         {
             Name = "rtbCompteEtHistoirePrompt",
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(31, 41, 55),
             BackColor = Color.White,
             Location = new Point(50, sectionTop + 72),
             Size = new Size(contentWidth, 140),
-            Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right
+            Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
+            Text = "Exemple : Je suis un enfant de 6 ans qui apprend le français. " +
+                   "Raconte-moi une histoire amusante en français avec des mots simples et explique les mots difficiles à la fin." +
+                   Environment.NewLine + Environment.NewLine +
+                   "Example: I am a 6-year-old child learning French. " +
+                   "Tell me a fun story in French with simple words and explain the difficult words at the end.",
         };
         Controls.Add(promptRichTextBox);
 
@@ -67,12 +72,12 @@ public partial class Apprendre
         {
             Name = "btnCompteEtHistoireCreate",
             Text = "Créer / Create",
-            Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
             BackColor = Color.FromArgb(219, 234, 254),
             ForeColor = Color.FromArgb(30, 64, 175),
             FlatStyle = FlatStyle.Flat,
             Location = new Point(50, sectionTop + 224),
-            Size = new Size(120, 34),
+            Size = new Size(180, 38),
             Cursor = Cursors.Hand,
             UseVisualStyleBackColor = false
         };
@@ -86,12 +91,12 @@ public partial class Apprendre
         {
             Name = "btnCompteEtHistoireStop",
             Text = "Arrêter / Stop",
-            Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0),
             BackColor = Color.FromArgb(254, 226, 226),
             ForeColor = Color.FromArgb(185, 28, 28),
             FlatStyle = FlatStyle.Flat,
-            Location = new Point(182, sectionTop + 224),
-            Size = new Size(140, 34),
+            Location = new Point(262, sectionTop + 224),
+            Size = new Size(150, 38),
             Cursor = Cursors.Hand,
             UseVisualStyleBackColor = false
         };
@@ -107,7 +112,7 @@ public partial class Apprendre
             Name = "lblCompteEtHistoireResultFr",
             Tag = "fr",
             Text = string.Empty,
-            Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(17, 24, 39),
             Location = new Point(50, sectionTop + 264),
             MaximumSize = new Size(contentWidth, 0),
@@ -120,7 +125,7 @@ public partial class Apprendre
             Name = "lblCompteEtHistoireResultEn",
             Tag = "en",
             Text = string.Empty,
-            Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0),
+            Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
             ForeColor = Color.FromArgb(17, 24, 39),
             Location = new Point(50, sectionTop + 264),
             MaximumSize = new Size(contentWidth, 0),

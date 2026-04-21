@@ -37,7 +37,7 @@
                 Text = "Des fiches simples pour apprendre les pronoms et la conjugaison en français et en anglais.",
                 Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(17, 24, 39),
-                Location = new Point(52, 88),
+                Location = new Point(52, 78),
                 MaximumSize = new Size(availableWidth, 0),
                 AutoSize = true
             });
@@ -57,7 +57,7 @@
             {
                 Tag = "fr|-1",
                 Text = "Choisissez un verbe pour aller directement à sa conjugaison.",
-                Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0),
+                Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(75, 85, 99),
                 Location = new Point(52, 166),
                 MaximumSize = new Size(availableWidth, 0),
@@ -68,7 +68,7 @@
             {
                 Tag = "en|-1",
                 Text = "Choose a verb to jump directly to its conjugation.",
-                Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0),
+                Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(75, 85, 99),
                 Location = new Point(52, 194),
                 MaximumSize = new Size(availableWidth, 0),
@@ -78,7 +78,7 @@
             IReadOnlyList<VerbSection> sections = GetVerbSections();
             List<Control> sectionAnchors = [];
             int navigationButtonWidth = Math.Min(190, Math.Max(150, (availableWidth - 24) / 3));
-            int navigationButtonHeight = 38;
+            int navigationButtonHeight = 46;
             int navigationButtonSpacing = 12;
             int navigationButtonX = contentLeft;
             int navigationButtonY = 236;
@@ -103,7 +103,7 @@
                 Button verbButton = new Button
                 {
                     Text = $"{sections[i].VerbFr} / {sections[i].VerbEn}",
-                    Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0),
+                    Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0),
                     BackColor = Color.FromArgb(219, 234, 254),
                     ForeColor = Color.FromArgb(30, 64, 175),
                     FlatStyle = FlatStyle.Flat,
@@ -139,14 +139,14 @@
                 yPosition += sectionPanel.Height + 22;
             }
 
-            AutoScrollMinSize = new Size(0, yPosition + 40);
+            AutoScrollMinSize = new Size(0, yPosition + 20);
             ResumeLayout();
         }
 
         private Panel CreateVerbSectionPanel(VerbSection section, int sectionIndex, int yPosition, int sectionWidth, Control navigationAnchor)
         {
-            int tenseCardHeight = 288;
-            int returnButtonHeight = 38;
+            int tenseCardHeight = 360;
+            int returnButtonHeight = 46;
             int sectionHeight = 88 + (section.Tenses.Count * tenseCardHeight) + ((section.Tenses.Count - 1) * 16) + returnButtonHeight + 34;
 
             Panel sectionPanel = new Panel
@@ -170,7 +170,7 @@
             {
                 Tag = $"fr|{sectionIndex}",
                 Text = section.VerbFr,
-                Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point, 0),
+                Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(17, 24, 39),
                 Location = new Point(26, 22),
                 AutoSize = true
@@ -197,13 +197,13 @@
             {
                 Panel tensePanel = CreateTensePanel(section.Tenses[tenseIndex], sectionIndex, tenseIndex, tenseYPosition, tenseWidth);
                 sectionPanel.Controls.Add(tensePanel);
-                tenseYPosition += tensePanel.Height + 16;
+                tenseYPosition += tensePanel.Height + 36;
             }
 
             Button returnToListButton = new Button
             {
                 Text = "Retour à la liste principale / Back to main list",
-                Font = new Font("Segoe UI", 9.5F, FontStyle.Bold, GraphicsUnit.Point, 0),
+                Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0),
                 BackColor = Color.FromArgb(239, 246, 255),
                 ForeColor = Color.FromArgb(30, 64, 175),
                 FlatStyle = FlatStyle.Flat,
@@ -230,7 +230,7 @@
                 BackColor = Color.White,
                 BorderStyle = BorderStyle.FixedSingle,
                 Location = new Point(18, yPosition),
-                Size = new Size(panelWidth, 288),
+                Size = new Size(panelWidth, 350),
                 Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right
             };
 
@@ -238,7 +238,7 @@
             {
                 Tag = $"fr|{sectionIndex}|{tenseIndex}",
                 Text = tense.TenseFr,
-                Font = new Font("Segoe UI", 12.5F, FontStyle.Bold, GraphicsUnit.Point, 0),
+                Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(30, 64, 175),
                 Location = new Point(20, 18),
                 AutoSize = true
@@ -248,7 +248,7 @@
             {
                 Tag = $"en|{sectionIndex}|{tenseIndex}",
                 Text = tense.TenseEn,
-                Font = new Font("Segoe UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 0),
+                Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0),
                 ForeColor = Color.FromArgb(75, 85, 99),
                 Location = new Point(22, 46),
                 AutoSize = true
@@ -259,8 +259,8 @@
 
             TableLayoutPanel conjugationTable = new TableLayoutPanel
             {
-                Location = new Point(18, 84),
-                Size = new Size(panelWidth - 36, 182),
+                Location = new Point(18, 92),
+                Size = new Size(panelWidth - 36, 238),
                 Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
                 ColumnCount = 4,
                 RowCount = tense.Rows.Count + 1,
@@ -270,15 +270,15 @@
                 Margin = new Padding(0)
             };
 
-            conjugationTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
-            conjugationTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
-            conjugationTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 34F));
-            conjugationTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 46F));
-            conjugationTable.RowStyles.Add(new RowStyle(SizeType.Absolute, 28F));
+            conjugationTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14F));
+            conjugationTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 14F));
+            conjugationTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
+            conjugationTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 42F));
+            conjugationTable.RowStyles.Add(new RowStyle(SizeType.Absolute, 42F));
 
             for (int rowIndex = 0; rowIndex < tense.Rows.Count; rowIndex++)
             {
-                conjugationTable.RowStyles.Add(new RowStyle(SizeType.Absolute, 25F));
+                conjugationTable.RowStyles.Add(new RowStyle(SizeType.Absolute, 31F));
             }
 
             conjugationTable.Controls.Add(CreateConjugationCellLabel("fr", "Pronoms", true), 0, 0);
@@ -309,11 +309,11 @@
                 Text = text,
                 Dock = DockStyle.Fill,
                 Margin = new Padding(0),
-                Padding = new Padding(6, 4, 6, 4),
+                Padding = new Padding(8, 5, 8, 5),
                 TextAlign = ContentAlignment.MiddleLeft,
                 Font = isFrench
-                    ? new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0)
-                    : new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0),
+                    ? new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0)
+                    : new Font("Segoe UI", 11.5F, FontStyle.Regular, GraphicsUnit.Point, 0),
                 ForeColor = isFrench ? Color.FromArgb(17, 24, 39) : Color.FromArgb(55, 65, 81),
                 BackColor = Color.White
             };
